@@ -100,11 +100,16 @@ footer{background-color:#E6E6E6;}
 
 .header-logo{grid-column: 1/7;}
 
-.kickstarter-top{grid-column:9/13;}
+.kickstarter-top{grid-column:10/13;}
 
 .mooze-model{grid-column: 1/11;}
 
-.mooze-model img{flex:100%;}
+.mooze-model img{
+  flex:100%;
+  max-width: 100%;
+  align-self: center;
+}
+  /* max-height: 17em;} */
 
 
 .price-spoiler{grid-column:1/13;}
@@ -165,7 +170,7 @@ footer{background-color:#E6E6E6;}
   #slick-slider{display: flex; flex-wrap: wrap !important;;}
 
   .header-logo{grid-column: 1/4;}
-  .kickstarter-top{grid-column:11/13;}
+  .kickstarter-top{grid-column:12/13;}
 
   .price-spoiler{grid-column:1/6;}
   .copyright{grid-column:9/13;}
