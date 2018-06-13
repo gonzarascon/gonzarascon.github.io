@@ -6,48 +6,74 @@
   <title>Mooze - Tu vida sin interrupciones</title>
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 </head>
 <body>
   <div class="main-grid">
-    <header class="full-width grid-inherit gap-inherit drop-5">
-          <h1 class="header-logo px-20"><a><img src="img/mooze-logo.svg" alt="Mooze - Tu vida sin interrupciones"></a></h1>
 
-          <a class="kickstarter-top px-35 align-middle"><img src="img/kickstarter-top.svg" alt="¡Ayúdanos en kickstarter!"></a>
+    <div id="lineDrawing">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 200 88.08">
+          <!-- <defs><style>.cls-1{fill:#009be8;}</style></defs> -->
+          <g id="Modo_de_aislamiento" data-name="Mooze isologo" class="lines">
+              <path class="path-1" fill="none" stroke="#009BE8" stroke-width="9.5039" stroke-linecap="round" stroke-miterlimit="10" d="M21,50.5
+                c0-16.5,14.7-30,30.9-30c16.3,0,30.9,13.5,30.9,30c0,0.2,0,0.6,0,0.6c0,16.5,14.5,30,30.9,30c16.2,0,30.9-13.5,30.9-30v-0.6"/>
+              <path class="path-2" fill="none"  stroke-width="9.5039" stroke-linecap="round" stroke-miterlimit="10" d="M98.2,26.3
+                c10.9-8.8,25.2-5.5,31,1.7"/>
+          </g>
+        </svg>
+      </span>
+      <h4 class="intro-text">Tu vida sin interrupciones</h4>
+    </div>
+
+    <header class="full-width grid-inherit gap-inherit drop-5">
+          <h1 class="header-logo px-20 d-flex"><a class="width-100"><img src="img/mooze-logo.svg" alt="Mooze - Tu vida sin interrupciones"></a></h1>
+
+          <div class="kickstarter-top px-35 align-middle d-flex">
+            <a class="width-100"><img src="img/kickstarter-top.svg" alt="¡Ayúdanos en kickstarter!"></a>
+          </div>
     </header>
 
     <main class="wrapper max-1550 gap-inherit centered">
-      <h2 class="title black-text full-wrapper centered">Tu vida sin interrupciones.</h2>
+      <h2 class="title bold-text full-wrapper centered">Tu vida sin interrupciones.</h2>
       <div class="video-container full-wrapper">
-            <iframe src="https://www.youtube.com/embed/jB0Afdy68GM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/FIZ-rGYIdJ8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
-      <div class="w-2 mooze-model text-center">
+      <div class="d-flex one-to-five mooze-model text-center j-content-center">
           <img src="img/mooze-model.png" alt="Mooze">
+          <h3 class="subtitle regular-text">Aíslate de los ruidos molestos.</h3>
+          <p class="light-text desc-text">Mooze te permite silenciar todos los ruidos molestos de las casas vecinas.<br />Tu casa no volverá a ser la misma.</p>
       </div>
 
-      <div class="w-half-to-end align-middle">
-        <h3 class="subtitle black-text">Aíslate de los ruidos molestos.</h3>
-        <p class="light-text desc-text p-adjust">Mooze te permite silenciar todos los ruidos molestos de las casas vecinas.<br />Tu casa no volverá a ser la misma.</p>
-      </div>
+      <!-- <div class="w-half-to-end align-middle">
 
-      <div class="w-2 mooze-model text-center">
+      </div> -->
+
+      <div class="d-flex seven-to-eleven mooze-model text-center j-content-center">
           <img src="img/bluetooth-player.png" alt="Reproducción bluetooth">
+          <h3 class="subtitle regular-text">Disfruta la música, solo para tu hogar.</h3>
+          <p class="light-text desc-text">Moose no sólo funciona como un silenciador, sino que también como un parlante inalámbrico. <br>
+          No tienes que preocuparte por tus vecinos, ellos ni se enterarán.</p>
       </div>
 
-      <div class="w-half-to-end align-middle">
-        <h3 class="subtitle black-text">Disfruta la música, solo para tu hogar.</h3>
-        <p class="light-text desc-text p-adjust">Moose no sólo funciona como un silenciador, sino que también como un parlante inalámbrico. <br>
-        No tienes que preocuparte por tus vecinos, ellos ni se enterarán.</p>
+      <!-- <div class="w-half-to-end align-middle">
+
+      </div> -->
+      <div id="slick-slider" class="full-wrapper d-flex">
+        <div><img src="img/slides/slide3.jpg" alt="Slide 1"></div>
+        <div><img src="img/slides/slide2.jpg" alt="Slide 2"></div>
+        <div><img src="img/slides/slide1.jpg" alt="Slide 3"></div>
       </div>
 
-      <h2 class="title black-text full-wrapper centered">¿Cómo funciona?</h2>
+      <h2 class="title bold-text full-wrapper centered">¿Cómo funciona?</h2>
 
       <div class="w-3 demostration">
           <img src="img/house-to-mooze.png" alt="Absorción de ruido">
       </div>
 
       <div class="w-half-to-end align-middle">
-        <h3 class="subtitle black-text mt-0">¡Ey, escucha esto!</h3>
+        <h3 class="subtitle regular-text mt-0">¡Ey, escucha esto!</h3>
         <p class="light-text desc-text p-adjust">A través de los microfonos incorporados, Mooze genera una imagen virtual del perimetro de tu hogar, así detecta que ruidos provienen de casas aledañas para poder silenciarlos.</p>
       </div>
 
@@ -56,7 +82,7 @@
       </div>
 
       <div class="w-half-to-end align-middle">
-        <h3 class="subtitle black-text mt-0">¿Que quieres escuchar?</h3>
+        <h3 class="subtitle regular-text mt-0">¿Que quieres escuchar?</h3>
         <p class="light-text desc-text p-adjust">¡Sorpresa! Mooze también sirve como un parlante bluetooth, sus microfonos pueden volverse parlantes para que escuches lo que quieras en todo tu hogar. Sólo tienes que conectar tu smartphone y ¡voilà!</p>
       </div>
 
@@ -65,11 +91,11 @@
       </div>
 
       <div class="w-half-to-end align-middle">
-        <h3 class="subtitle black-text mt-0">No soy un cubo complicado.</h3>
+        <h3 class="subtitle regular-text mt-0">No soy un cubo complicado.</h3>
         <p class="light-text desc-text p-adjust">Mooze funciona autónomamente. Pero, si quieres, puedes configurarlo medianta la app oficial. Esto te permitirá decidir que sonidos y frecuencias deseas silenciar.</p>
       </div>
 
-      <h2 class="title black-text full-wrapper centered">Categorías</h2>
+      <h2 class="title bold-text full-wrapper centered">Categorías</h2>
 
       <div class="categorie-1">
         <h4 class="black-text pricing-title text-center mb-0 mt-0">$30*</h4>
@@ -84,7 +110,7 @@
         <p class="light-text desc-text text-center"> - Mooze x 1 <br /> - Soporte de pared x 1 <br /> - Acceso anticipado a nuevas funcionalidades</p>
       </div>
 
-      <h2 class="title black-text full-wrapper centered">¿Te gusta el silencio? ¡Ayudanos!</h2>
+      <h2 class="title bold-text full-wrapper centered">¿Te gusta el silencio? ¡Ayudanos!</h2>
 
       <a href="#" class="banner"><img src="img/kickstarter-banner.png"  alt="Campaña en Kickstarter"/></a>
 
@@ -97,7 +123,10 @@
   </div>
 
 
-  <script src="js/jquery.min.js" type="text-javascript"></script>
-  <script src="js/script.js" type="text-javascript"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" type="text/javascript"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
