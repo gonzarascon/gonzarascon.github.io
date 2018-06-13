@@ -167,7 +167,7 @@ footer{background-color:#E6E6E6;}
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  #slick-slider{display: flex; flex-wrap: wrap !important;;}
+  #slick-slider{display: flex !important; flex-wrap: wrap !important;;}
 
   .header-logo{grid-column: 1/4;}
   .kickstarter-top{grid-column:12/13;}
