@@ -75,9 +75,7 @@ footer{background-color:#E6E6E6;}
 .align-middle{align-self: center;}
 .centered{justify-self: center;}
 
-.one-to-five{grid-column:1/5;}
 
-.seven-to-eleven{grid-column: 7/11;}
 /* Graphic Styles classes */
 .drop-5{box-shadow: 2px 2px .75em .25em rgba(0, 0, 0, 0.2)}
 
@@ -104,6 +102,9 @@ footer{background-color:#E6E6E6;}
 
 .kickstarter-top{grid-column:9/13;}
 
+.mooze-model{grid-column: 1/11;}
+
+.mooze-model img{flex:100%;}
 
 
 .price-spoiler{grid-column:1/13;}
@@ -144,6 +145,7 @@ footer{background-color:#E6E6E6;}
     border: 0;
 }
 
+#slick-slider{display:none !important;}
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -160,6 +162,8 @@ footer{background-color:#E6E6E6;}
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #slick-slider{display: flex; flex-wrap: wrap !important;;}
+
   .header-logo{grid-column: 1/4;}
   .kickstarter-top{grid-column:11/13;}
 
@@ -173,6 +177,8 @@ footer{background-color:#E6E6E6;}
   .p-adjust{width:80%;}
   .banner img{max-width: 753px; width: 100%;}
 
+  .one-to-five{grid-column:1/5;}
+  .seven-to-eleven{grid-column: 7/11;}
  }
 
 /* Large devices (desktops, 992px and up) */

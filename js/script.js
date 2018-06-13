@@ -52,6 +52,10 @@ $(document).ready(function() {
     autoplaySpeed:1000,
     infinite : true,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    responsive:[{
+        breakpoint:767,
+        settings: "unslick"
+    }]
   });
 });
