@@ -1,10 +1,26 @@
 [
   {
-    "path" : "hola",
-    "name" : "Sonido 1"
+    "path" : "audios/balada-showmatch.mp3",
+    "name" : "Balada"
   },
   {
-    "path" : "chau",
-    "name" : "Sonido 2"
+    "path" : "audios/intelectual.mp3",
+    "name" : "Intelectual"
+  },
+  {
+    "path" : "audios/saxo-sexy.mp3",
+    "name" : "Saxo Sexy"
+  },
+  {
+    "path" : "audios/showmatch-salvacion.mp3",
+    "name" : "Salvación"
+  },
+  {
+    "path" : "audios/titanic-flute.mp3",
+    "name" : "Titanic"
+  },
+  {
+    "path" : "audios/wii-flute.mp3",
+    "name" : "Flautita"
   }
 ]

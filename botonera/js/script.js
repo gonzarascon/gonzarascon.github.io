@@ -1,4 +1,5 @@
 let sounds = [];
+let soundPath = [];
 
 $(document).ready(function() {
 
@@ -7,11 +8,18 @@ $(document).ready(function() {
       console.log(sound);
       console.log(sound[0].path);
       $.each(sound,function(i, button) {
-        sounds.push('<button id="sound-'+ i + '">' + sound[i].name + '</button>');
+        soundPath.push(sound[i].path);
+        sounds.push('<button id="sound-'+ i + '" class = "sound">' + sound[i].name + '</button>');
       });
       $.each(sounds,function(i, element) {
         $('.button-grid').append(element);
       });
 
+  });
+
+  let soundButtons = new Howl({
+    src : soundPath,
+    html5 : true,
+    autoplay: false
   });
 });
