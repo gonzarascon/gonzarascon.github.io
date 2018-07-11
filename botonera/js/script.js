@@ -8,7 +8,7 @@ $(document).ready(function() {
       console.log(sound);
       console.log(sound[0].path);
       $.each(sound,function(i, button) {
-        soundPath.push(sound[i].path);
+        soundPath.push("'" + sound[i].path + "'");
         sounds.push('<button id="sound-'+ i + '" class = "sound">' + sound[i].name + '</button>');
       });
       $.each(sounds,function(i, element) {
