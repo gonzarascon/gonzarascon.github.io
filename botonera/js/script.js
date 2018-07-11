@@ -23,7 +23,7 @@ $(document).ready(function() {
     autoplay: false
   });
 
-  $('.sound').on('click', '.selector', function(event) {
+  $('.sound').on('click', function(event) {
     event.preventDefault();
     console.log('click');
     soundButtons.play();
