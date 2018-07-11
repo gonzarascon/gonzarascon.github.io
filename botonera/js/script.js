@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
   console.log(soundPath);
   let soundButtons = new Howl({
-    src : soundPath,
+    src : ['https://gonzarascon.github.io/botonera/audios/balada-showmatch.mp3'],
     html5 : true,
     autoplay: false
   });
