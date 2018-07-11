@@ -1,0 +1,8 @@
+/* Sounds implemented */
+
+[
+  {
+    "path" : "hola",
+    "name" : "Sonido 1"
+  }
+]
