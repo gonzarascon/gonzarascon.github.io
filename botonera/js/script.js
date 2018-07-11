@@ -23,3 +23,7 @@ $(document).ready(function() {
     autoplay: false
   });
 });
+
+$('.sound').click(function(event) {
+  soundButtons.play();
+});
