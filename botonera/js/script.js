@@ -7,7 +7,7 @@ $(document).ready(function() {
       console.log(sound);
       console.log(sound[0].path);
       $.each(sound,function(i, button) {
-        sounds.push('<button id="sound-'+ i + '">' + sound + '</button>');
+        sounds.push('<button id="sound-'+ i + '">' + sound[i].name + '</button>');
       });
 
       $('.button-grid').append(sounds[0]);

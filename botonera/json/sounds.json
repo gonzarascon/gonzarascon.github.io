@@ -2,5 +2,9 @@
   {
     "path" : "hola",
     "name" : "Sonido 1"
+  },
+  {
+    "path" : "chau",
+    "name" : "Sonido 2"
   }
 ]
