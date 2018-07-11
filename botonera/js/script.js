@@ -22,9 +22,11 @@ $(document).ready(function() {
     html5 : true,
     autoplay: false
   });
-});
 
-$('.sound').click(function(event) {
-  console.log('click');
-  soundButtons.play();
+  $('.sound').on('click', '.selector', function(event) {
+    event.preventDefault();
+    console.log('click');
+    soundButtons.play();
+  });
+
 });
