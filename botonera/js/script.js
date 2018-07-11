@@ -9,7 +9,9 @@ $(document).ready(function() {
       $.each(sound,function(i, button) {
         sounds.push('<button id="sound-'+ i + '">' + sound[i].name + '</button>');
       });
+      $.each(sounds,function(i, element) {
+        $('.button-grid').append(element);
+      });
 
-      $('.button-grid').append(sounds[0]);
   });
 });
