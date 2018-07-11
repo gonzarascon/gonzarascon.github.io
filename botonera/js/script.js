@@ -25,5 +25,6 @@ $(document).ready(function() {
 });
 
 $('.sound').click(function(event) {
+  console.log('click');
   soundButtons.play();
 });
