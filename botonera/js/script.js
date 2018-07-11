@@ -2,7 +2,7 @@ let sounds = [];
 
 $(document).ready(function() {
 
-  $.getJSON('../json/sounds.json', function(sound) {
+  $.getJSON('botonera/json/sounds.json', function(sound) {
       /*optional stuff to do after success */
       $.each(sound,function(i, button) {
         sounds.push('<button id="sound-'+ i + '">' + button + '</button>');
