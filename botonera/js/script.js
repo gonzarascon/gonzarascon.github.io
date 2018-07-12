@@ -23,7 +23,7 @@ $(document).ready(function() {
     autoplay: false
   });
 
-  $('.sound').on('click', function(event) {
+  $('.button-grid').on('click','.sound', function(event) {
     event.preventDefault();
     console.log('click');
     soundButtons.play();
