@@ -16,7 +16,9 @@ $(document).ready(function() {
   });
   console.log(soundPath);
   let soundButtons = new Howl({
-    src : soundPath,
+    src : $.map(soundPath, function(a) {
+      return a;
+    }),
     html5 : true,
     autoplay: false
   });
