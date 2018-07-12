@@ -9,7 +9,7 @@ $(document).ready(function() {
       console.log(sound[0].path);
       $.each(sound,function(i, button) {
         soundPath.push("'https://gonzarascon.github.io/botonera/" + sound[i].path + "'");
-        sounds.push('<button id="sound-'+ i + '" class = "sound">' + sound[i].name + '</button>');
+        sounds.push('<button id="sound-'+ i + '" class = "sound" data-sound = "' + i + '">' + sound[i].name + '</button>');
       });
       $.each(sounds,function(i, element) {
         $('.button-grid').append(element);
@@ -25,8 +25,9 @@ $(document).ready(function() {
 
   $('.button-grid').on('click','.sound', function(event) {
     event.preventDefault();
-    console.log('click');
-    soundButtons.play();
+    let actualSound = $this.attr('data-sound');
+    console.log(actualSound);
+    // soundButtons.play();
   });
 
 });
