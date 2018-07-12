@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   $('.button-grid').on('click','.sound', function(event) {
     event.preventDefault();
-    let actualSound = $this.attr('data-sound');
+    let actualSound = $(this).attr('data-sound');
     console.log(actualSound);
     // soundButtons.play();
   });
