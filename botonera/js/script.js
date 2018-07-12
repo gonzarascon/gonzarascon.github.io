@@ -27,7 +27,7 @@ $(document).ready(function() {
     soundButtons.stop();
     let actualSound = $(this).attr('data-sound');
     console.log(actualSound);
-    soundButtons.play();
+    soundButtons.play(actualSound);
   });
 
 });
