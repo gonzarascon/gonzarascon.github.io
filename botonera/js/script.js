@@ -1,6 +1,6 @@
 let sounds = [];
-var soundPath = [];
-
+let soundPath = [];
+let soundButtons;
 $(document).ready(function() {
 
   $.getJSON('json/sounds.json', function(sound) {
@@ -14,7 +14,7 @@ $(document).ready(function() {
       });
 
       console.log(soundPath);
-      let soundButtons = new Howl({
+      soundButtons = new Howl({
         src : soundPath,
         html5 : true,
         autoplay: false
