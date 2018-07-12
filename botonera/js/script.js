@@ -14,11 +14,11 @@ $(document).ready(function() {
       });
 
   });
-  console.log(soundPath);
-  let soundButtons = new Howl({
-    src : $.map(soundPath, function(a) {
-      return a;
-    }),
+  // console.log(soundPath);
+  let soundButtons = new Howl(
+    console.log(sounPath);
+    {
+    src : soundPath,
     html5 : true,
     autoplay: false
   });
