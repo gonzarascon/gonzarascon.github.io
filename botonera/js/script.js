@@ -1,5 +1,5 @@
 let sounds = [];
-let soundPath = [];
+var soundPath = [];
 
 $(document).ready(function() {
 
@@ -14,10 +14,8 @@ $(document).ready(function() {
       });
 
   });
-  // console.log(soundPath);
-  let soundButtons = new Howl(
-    console.log(sounPath);
-    {
+  console.log(soundPath);
+  let soundButtons = new Howl({
     src : soundPath,
     html5 : true,
     autoplay: false
