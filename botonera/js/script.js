@@ -8,7 +8,7 @@ $(document).ready(function() {
       console.log(sound);
       console.log(sound[0].path);
       $.each(sound,function(i, button) {
-        soundPath.push("'https://gonzarascon.github.io/botonera/" + sound[i].path + "'");
+        soundPath.push('https://gonzarascon.github.io/botonera/' + sound[i].path);
         sounds.push('<button id="sound-'+ i + '" class = "sound" data-sound = "' + i + '">' + sound[i].name + '</button>');
       });
       $.each(sounds,function(i, element) {
