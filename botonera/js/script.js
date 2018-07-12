@@ -18,16 +18,17 @@ $(document).ready(function() {
   });
   console.log(soundPath);
   let soundButtons = new Howl({
-    src : ['https://gonzarascon.github.io/botonera/audios/balada-showmatch.mp3'],
+    src : soundPath,
     html5 : true,
     autoplay: false
   });
 
   $('.button-grid').on('click','.sound', function(event) {
     event.preventDefault();
+    soundButtons.stop();
     let actualSound = $(this).attr('data-sound');
     console.log(actualSound);
-    // soundButtons.play();
+    soundButtons.play();
   });
 
 });
