@@ -8,7 +8,7 @@ $(document).ready(function() {
       $.each(sound,function(i, button) {
         // soundPath.push("https://gonzarascon.github.io/botonera/" + sound[i].path );
         soundPath.push({ name:  sound[i].file});
-        sounds.push('<button id="sound-'+ i + '" class = "sound" data-sound = "'sound[i].file '">' + sound[i].name + '</button>');
+        sounds.push('<button id="sound-'+ i + '" class = "sound" data-sound = "'+ sound[i].file + '">' + sound[i].name + '</button>');
       });
       $.each(sounds,function(i, element) {
         $('.button-grid').append(element);
