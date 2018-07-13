@@ -1,26 +1,32 @@
 [
   {
     "path" : "audios/balada-showmatch.mp3",
-    "name" : "Balada"
+    "name" : "Balada",
+    "file" : "balada-showmatch"
   },
   {
     "path" : "audios/intelectual.mp3",
-    "name" : "Intelectual"
+    "name" : "Intelectual",
+    "file" : "intelectual"
   },
   {
     "path" : "audios/saxo-sexy.mp3",
-    "name" : "Saxo Sexy"
+    "name" : "Saxo Sexy",
+    "file" : "saxo-sexy"
   },
   {
     "path" : "audios/showmatch-salvacion.mp3",
-    "name" : "Salvación"
+    "name" : "Salvación",
+    "file" : "showmatch-salvacion"
   },
   {
     "path" : "audios/titanic-flute.mp3",
-    "name" : "Titanic"
+    "name" : "Titanic",
+    "file" : "titanic-flute"
   },
   {
     "path" : "audios/wii-flute.mp3",
-    "name" : "Flautita"
+    "name" : "Flautita",
+    "file" : "wii-flute"
   }
 ]
