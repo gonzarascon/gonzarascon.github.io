@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,400,700,900');
+
 *{margin:0; padding:0;}
 
+body{
+  background-color: #f2f2f2;
+  font-size: 16px;
+  font-family: 'Chivo', sans-serif;
+}
 
 .container{
   width: 100vw;
@@ -8,7 +15,20 @@
   grid-auto-rows: 20em;
 }
 
-.button-grid{
+.centered{
   grid-column: 2/4;
   grid-row-start: 2;
+}
+
+.button-grid{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.sound{
+  background-color:#8414FF;
+  color:white;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 700;
+  border:none;
+  outline: none;
 }
