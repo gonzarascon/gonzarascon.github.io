@@ -8,6 +8,11 @@ body{
   font-family: 'Chivo', sans-serif;
 }
 
+/* Utility classes  */
+
+.text-center{text-align: center;}
+
+/* End of utility classes */
 .container{
   width: 100vw;
   display: grid;
