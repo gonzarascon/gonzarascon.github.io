@@ -11,7 +11,7 @@ body{
 /* Utility classes  */
 
 .text-center{text-align: center;}
-.vself-middle{align-self: center;}
+.vself-center{align-self: center;}
 .centered{grid-column: 2/4;}
 /* End of utility classes */
 
