@@ -20,6 +20,12 @@ body{
   grid-row-start: 2;
 }
 
+.title{
+  font-weight: 900;
+  font-size: 2.25em;
+  color: black;
+}
+
 .button-grid{
   display: grid;
   grid-gap: 1em;
@@ -33,6 +39,7 @@ body{
   font-weight: 700;
   border:none;
   outline: none;
+  font-size: 1.25em;
 }
 
 .sound:hover{
