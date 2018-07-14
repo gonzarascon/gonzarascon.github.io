@@ -11,17 +11,15 @@ body{
 /* Utility classes  */
 
 .text-center{text-align: center;}
-
+.vself-middle{align-self: center;}
+.centered{grid-column: 2/4;}
 /* End of utility classes */
+
 .container{
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-auto-rows: 15em;
-}
-
-.centered{
-  grid-column: 2/4;
 }
 
 .title{
