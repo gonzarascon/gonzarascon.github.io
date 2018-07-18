@@ -52,6 +52,8 @@ body{
   width: 100%;
 }
 
+.stop-sounds:hover{cursor:pointer;}
+
 .sound{
   background-color:#8414FF;
   color:white;

@@ -37,4 +37,9 @@ $(document).ready(function() {
     console.log("hola");
     $('#stop').show();
   }
+
+  $('#stop').click(function(event) {
+    ion.sound.stop();
+  });
+
 });
