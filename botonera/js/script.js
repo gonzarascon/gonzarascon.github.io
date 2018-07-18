@@ -1,7 +1,6 @@
 let sounds = [];
 let soundPath = [];
 let soundButtons;
-let ions;
 $(document).ready(function() {
 
   $.getJSON('json/sounds.json', function(sound) {
@@ -13,12 +12,12 @@ $(document).ready(function() {
         $('.button-grid').append(element);
       });
 
-      ions = ion.sound({
-              sounds: soundPath,
-              path: "https://gonzarascon.github.io/botonera/audios/",
-              preload: true,
-              multiplay: false
-            });
+      ion.sound({
+      sounds: soundPath,
+      path: "https://gonzarascon.github.io/botonera/audios/",
+      preload: true,
+      multiplay: false
+      });
 
       console.log(soundPath);
   });
@@ -26,22 +25,11 @@ $(document).ready(function() {
 
   $('.button-grid').on('click','.sound', function(event) {
     event.preventDefault();
-    ions.sound.stop();
+    ion.sound.stop();
     displayStop();
     let actualSound = $(this).attr('data-sound');
     console.log(actualSound);
-    ions.sound.play(actualSound);
+    ion.sound.play(actualSound);
   });
-
-  function displayStop(){
-    console.log("sube");
-    $('.stop-sounds').slideUp('300');
-
-    $('.stop-sounds').click(function(event) {
-      console.log("Para");
-      ions.sound.stop();
-      $(this).slideDown('300');
-    });
-  }
 
 });
