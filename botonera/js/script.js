@@ -33,6 +33,6 @@ $(document).ready(function() {
   });
 
   function displayStop(){
-    $('.stop-sounds').slideUp(300);
+    $('.stop-sounds').slideUp();
   }
 });
