@@ -35,9 +35,11 @@ $(document).ready(function() {
 });
 
 function displayStop(){
+  console.log("sube");
   $('.stop-sounds').slideUp('300');
 
   $('.stop-sounds').click(function(event) {
+    console.log("Para");
     ion.sound.stop();
     $(this).slideDown('300');
   });
