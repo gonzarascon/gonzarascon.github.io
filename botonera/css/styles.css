@@ -6,6 +6,7 @@ body{
   background-color: #f2f2f2;
   font-size: 16px;
   font-family: 'Chivo', sans-serif;
+  position: relative;
 }
 
 /* Utility classes  */
@@ -38,12 +39,16 @@ body{
 }
 
 .stop-sounds{
+  bottom: 0;
+  box-sizing: border-box;
+  position: fixed;
   text-align: center;
   background-color: #0CE80C;
   color: white;
   font-size: 2em;
   padding: 1em;
   font-weight: 700;
+  width: 100%;
 }
 
 .sound{
