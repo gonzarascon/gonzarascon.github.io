@@ -33,13 +33,13 @@ $(document).ready(function() {
 
   $('.button-grid').click(displayStop());
 
-  function displayStop(){
-    console.log("hola");
-    $('#stop').show();
-  }
-
   $('#stop').click(function(event) {
     ion.sound.stop();
   });
 
 });
+
+function displayStop(){
+  console.log("hola");
+  $('#stop').show();
+}
