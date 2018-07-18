@@ -26,11 +26,12 @@ $(document).ready(function() {
   $('.button-grid').on('click','.sound', function(event) {
     event.preventDefault();
     ion.sound.stop();
-    displayStop();
     let actualSound = $(this).attr('data-sound');
     console.log(actualSound);
     ion.sound.play(actualSound);
   });
+
+  $('.button-grid').click(displayStop());
 
   function displayStop(){
     $('.stop-sounds').slideUp();
