@@ -34,6 +34,7 @@ $(document).ready(function() {
   $('.button-grid').click(displayStop());
 
   function displayStop(){
-    $('.stop-sounds').slideUp();
+    console.log("hola");
+    $('#stop').slideUp();
   }
 });
