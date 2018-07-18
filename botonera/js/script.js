@@ -35,6 +35,6 @@ $(document).ready(function() {
 
   function displayStop(){
     console.log("hola");
-    $('#stop').slideUp();
+    $('#stop').show();
   }
 });
