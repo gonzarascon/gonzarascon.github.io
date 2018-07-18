@@ -27,14 +27,14 @@ $(document).ready(function() {
     event.preventDefault();
     ion.sound.stop();
     let actualSound = $(this).attr('data-sound');
-    $('#stop').slideUp('300');
+    $('#stop').fadeIn('300');
     console.log(actualSound);
     ion.sound.play(actualSound);
   });
 
   $('#stop').click(function(event) {
     ion.sound.stop();
-    $(this).slideDown('300');
+    $(this).fadeOut('300');
   });
 
 });
