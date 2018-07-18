@@ -38,8 +38,14 @@ body{
 }
 
 .stop-sounds{
-  grid-column:1/5;
+  text-align: center;
+  align-self: end;
+  grid-column: 1/5;
   background-color: #0CE80C;
+  color: white;
+  font-size: 2em;
+  padding: 1em;
+  font-weight: 700;
 }
 
 .sound{
