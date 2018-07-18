@@ -19,11 +19,7 @@ body{
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 50px auto 50px;
-  grid-template-areas:
-  ". title title title ."
-  ". button button button ."
-  "stop stop stop stop";
+  grid-template-rows: 50px auto [stop-start]50px[stop-end];
   grid-auto-rows: 15em;
 }
 
@@ -45,7 +41,7 @@ body{
 .stop-sounds{
   grid-column:1/5;
   background-color: #0CE80C;
-  grid-area: stop;
+  grid-row:stop-start/stop-end;
 }
 
 .sound{
