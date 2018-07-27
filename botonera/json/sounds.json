@@ -28,5 +28,10 @@
     "path" : "audios/wii-flute.mp3",
     "name" : "Flautita",
     "file" : "wii-flute"
+  },
+  {
+    "path" : "audios/a-laburar.mp3",
+    "name" : "A laburar",
+    "file" : "a-laburar"
   }
 ]
