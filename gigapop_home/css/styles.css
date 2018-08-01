@@ -1,0 +1,12 @@
+/*---- General Setup  ----*/
+body{
+	margin:0;
+	padding: 0;
+}
+
+
+/*---- SVG logo setup classes  ----*/
+
+.st0{fill:#515151;}
+#pop_1_ stop{ transition: all  .4s ease;}
+#pop{transition: all ease .3s;}
