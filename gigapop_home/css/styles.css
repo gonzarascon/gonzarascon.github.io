@@ -2,6 +2,9 @@
 body{
 	margin:0;
 	padding: 0;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	background-color:#333333;
 }
 
 
@@ -10,3 +13,54 @@ body{
 .st0{fill:#515151;}
 #pop_1_ stop{ transition: all  .4s ease;}
 #pop{transition: all ease .3s;}
+
+/*---- Grid Setup  ----*/
+
+.wrapper{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1em;
+	grid-auto-rows: minmax(77px,auto);
+	grid-template-areas:
+	"header header header header header"
+	 "main main main main main"
+	 "footer footer footer footer footer";
+}
+
+header{
+	grid-area:header;
+	display: grid;
+	grid-template-columns: [menu-start]3fr [menu-end logo-start]1fr[logo-end] 3fr;
+	background-color: #f2f2f2;
+	box-shadow: 0px 10px 24px -10px #000000;
+}
+main{
+	grid-area:main;
+}
+footer{
+	grid-area:footer;
+}
+
+/*---- Header  ----*/
+
+.menu-list{
+	list-style: none;
+	overflow: hidden;
+}
+
+.menu-item{
+	float:left;
+	margin-right: 1em;
+}
+
+@media (min-width:992px){
+	/*---- Header ----*/
+	#pop-logo{
+		grid-column: logo-start/logo-end;
+	}
+	.main-nav{
+		align-self: center;
+		grid-column:menu-start/menu-end;
+	}
+}
