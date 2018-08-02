@@ -7,20 +7,42 @@ body{
 	background-color:#333333;
 }
 
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
 
 /*---- SVG logo setup classes  ----*/
 
 .st0{fill:#515151;}
 #pop_1_ stop{ transition: all  .4s ease;}
 #pop{transition: all ease .3s;}
+/* #studio path{stroke:black;} */
 
+/*---- Utility classes  ----*/
+
+.grid-inherit{
+	display: grid;
+	grid-template-columns: inherit;
+	grid-template-rows: inherit;
+	grid-gap: inherit;
+	grid-auto-rows: inherit;
+	grid-auto-columns: inherit;
+}
+
+.full-fiveGrid{
+	grid-column: 1/6;
+}
+
+.w-100{width: 100%;}
 /*---- Grid Setup  ----*/
 
 .wrapper{
-	width: 100vw;
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 1em;
+	grid-column-gap: 1em;
 	grid-auto-rows: minmax(77px,auto);
 	grid-template-areas:
 	"header header header header header"
@@ -52,15 +74,57 @@ footer{
 .menu-item{
 	float:left;
 	margin-right: 1em;
+	box-sizing: border-box;
+	padding: .5em 0;
+	border-bottom: 3px solid rgba(255,255,255,0);
+}
+
+.item-active{
+	border-bottom:3px solid #6300A2;
+}
+
+#pop-logo{
+	grid-column: 1/4;
+	padding: 0 2em;
+}
+
+/*---- Main  ----*/
+.writing-section{
+	background-image: url(../img/background-coding.jpg);
+	height: calc(100vh - 80px);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.writing-container{
+	align-self: center;
+	color:white;
+	border-left: 3px solid white;
+	padding-left: 1em;
+	font-size: 4em;
+	text-transform: uppercase;
+}
+
+.writer{
+	font-weight: 300;
 }
 
 @media (min-width:992px){
 	/*---- Header ----*/
 	#pop-logo{
 		grid-column: logo-start/logo-end;
+		padding:0;
 	}
 	.main-nav{
 		align-self: center;
 		grid-column:menu-start/menu-end;
+	}
+
+	/*---- Main ----*/
+
+	.writing-container{
+		grid-column: 2/span 2;
+
 	}
 }
