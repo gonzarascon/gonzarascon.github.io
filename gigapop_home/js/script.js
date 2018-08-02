@@ -3,7 +3,7 @@ $(document).ready(function() {
 	let phrasesForTyping = ["Experiencias","Oportunidades", "Identidad"];
 	let mainTyping = new Typed ('.writer',{
 		strings:phrasesForTyping,
-		typeSpeed: 50,
+		typeSpeed: 70,
 		loop:true,
 		startDelay:150
 	});
