@@ -14,6 +14,7 @@ a{
 
 *::selection{
 	background-color:#6300A2;
+	color:white;
 }
 
 /*---- SVG logo setup classes  ----*/
@@ -109,8 +110,12 @@ footer{
 	text-transform: uppercase;
 }
 
+.static-text{margin:0;}
+
 .writer{
 	font-weight: 300;
+	width: 100%;
+	/* display: inline-block; */
 }
 
 @media (min-width:992px){

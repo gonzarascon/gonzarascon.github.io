@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	let phrasesForTyping = ["Experiencias","Oportunidades", "Identidad"];
+	let mainTyping = new Typed ('.writer',{
+		strings:phrasesForTyping,
+		typeSpeed: 50,
+		loop:true,
+		startDelay:150
+	});
+
 	$('#change').click(function(event) {
 		let el = $('#pop');
 		let gradient = $("#pop_1_");
