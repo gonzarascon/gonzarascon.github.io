@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	let phrasesForTyping = ["Experiencias","Oportunidades", "Identidad"];
+	let phrasesForTyping = ["Experiencias","Oportunidades", "Identidad","E-commerce","Sitios asombrosos"];
 	let mainTyping = new Typed ('.writer',{
 		strings:phrasesForTyping,
 		typeSpeed: 70,
