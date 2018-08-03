@@ -14,4 +14,7 @@ $(document).ready(function() {
 		gradient.find('stop').css('stop-color', 'rgba(0,0,0,0)');
 		el.css('stroke','#642D91');
 	});
+
+	//Start Animate on Scroll lib
+	AOS.init();
 });
