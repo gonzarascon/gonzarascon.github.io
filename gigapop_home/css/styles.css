@@ -76,9 +76,13 @@ header{
 	grid-template-columns: [menu-start]3fr [menu-end logo-start]1fr[logo-end] 3fr;
 	background-color: #f2f2f2;
 	box-shadow: 0px 10px 24px -10px #000000;
+	position: sticky;
+	top:0;
+	z-index: 999999999;
 }
 main{
 	grid-area:main;
+	grid-row-gap:83px !important;
 }
 footer{
 	grid-area:footer;
@@ -110,12 +114,10 @@ footer{
 	padding: 0 2em;
 }
 
-
-
 /*---- Main  ----*/
 .writing-section{
 	background-image: url(../img/background-coding.jpg);
-	height: calc(100vh - 80px);
+	/* height: calc(100vh - 80px); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -153,7 +155,7 @@ footer{
 	align-self:center;
 }
 
-.section-padding{margin: 5em 0;}
+/* .section-padding{margin: 5em 0;} */
 
 .section-title{
 	text-align: center;
@@ -239,11 +241,16 @@ footer{
 @media (min-width:992px){
 	/* Utility classes */
 	.ml-md-50px{
-		margin-left: 50px;
+		margin-left: 50px !important;
 	}
 
 	.center-fiveGrid{
 		grid-column: 2/5 !important;
+	}
+
+	/*---- General Setup ----*/
+	.calc-header{
+		height: calc(100vh - 84px);
 	}
 	/*---- Header ----*/
 	#pop-logo{
@@ -281,6 +288,7 @@ footer{
 	.section-title::after{
 		max-width: 209.76px;
 		width: 55%;
+		margin:0;
 	}
 
 	.section-subtitle{
