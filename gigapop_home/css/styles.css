@@ -239,7 +239,7 @@ footer{
 @media (min-width:992px){
 	/* Utility classes */
 	.ml-md-50px{
-		margin-left: 50px;
+		margin-left: 50px !important;
 	}
 
 	.center-fiveGrid{
@@ -281,6 +281,7 @@ footer{
 	.section-title::after{
 		max-width: 209.76px;
 		width: 55%;
+		margin:0;
 	}
 
 	.section-subtitle{
