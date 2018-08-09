@@ -79,6 +79,7 @@ header{
 }
 main{
 	grid-area:main;
+	grid-row-gap: 2em;
 }
 footer{
 	grid-area:footer;
@@ -298,7 +299,6 @@ footer{
 	}
 
 	/*---- Main ----*/
-	main{grid-row-gap: 2em;}
 	.writing-container{
 		text-align: left;
 		grid-column: 2/span 3;
