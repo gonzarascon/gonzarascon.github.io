@@ -79,7 +79,7 @@ header{
 }
 main{
 	grid-area:main;
-	grid-row-gap: 2em;
+	grid-row-gap: 2em !important;
 }
 footer{
 	grid-area:footer;
@@ -279,14 +279,36 @@ footer{
 	}
 }
 
+@media (min-width: 768px) {
+/*---- Utility Classes  ----*/
+.center-fiveGrid{
+	grid-column: 2/5 !important;
+}
+
+/*---- Main ----*/
+.writing-container{font-size: 3em;}
+.section-title{
+	text-align: left;
+	grid-column: 1/span 2;
+	margin-left: 50px;
+	font-size: 3em;
+}
+.section-title::after{
+	max-width: 209.76px;
+	width: 55%;
+	margin:0;
+}
+.section-text{
+	margin-left: 50px;
+	grid-column: 1/5;
+}
+
+}
+
 @media (min-width:992px){
 	/* Utility classes */
 	.ml-md-50px{
 		margin-left: 50px !important;
-	}
-
-	.center-fiveGrid{
-		grid-column: 2/5 !important;
 	}
 	/*---- Header ----*/
 	#pop-logo{
@@ -301,12 +323,8 @@ footer{
 
 	/*---- Main ----*/
 	.writing-container{
-		text-align: left;
 		grid-column: 2/span 3;
-		border-left: 3px solid white;
-		padding-left: 1em;
 		font-size: 4em;
-		border-left: 3px solid white;
 		padding-left: .5em;
 	}
 
@@ -315,15 +333,7 @@ footer{
 	}
 
 	.section-title{
-		text-align: left;
 		font-size: 4em;
-		grid-column: 1/span 2;
-	}
-
-	.section-title::after{
-		max-width: 209.76px;
-		width: 55%;
-		margin:0;
 	}
 
 	.section-subtitle{
