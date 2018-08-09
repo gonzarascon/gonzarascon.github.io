@@ -103,7 +103,7 @@ footer{
 	transition: all ease .3s;
 }
 
-.menu-item{
+.menu-item:hover{
 	opacity: .5;
 	transition: all ease .3s;
 }
