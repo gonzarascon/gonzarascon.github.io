@@ -235,6 +235,7 @@ footer{
 	cursor: pointer;
 	font-weight: 700;
 	font-size: 1.25em;
+	-webkit-appearance: none;
 }
 
 @media (min-width: 576px) {
