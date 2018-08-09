@@ -100,6 +100,12 @@ footer{
 	box-sizing: border-box;
 	padding: .5em 0;
 	border-bottom: 3px solid rgba(255,255,255,0);
+	transition: all ease .3s;
+}
+
+.menu-item{
+	opacity: .5;
+	transition: all ease .3s;
 }
 
 .item-active{
@@ -236,6 +242,12 @@ footer{
 	font-weight: 700;
 	font-size: 1.25em;
 	-webkit-appearance: none;
+	transition: all ease .3s;
+}
+
+.send-contact:hover{
+	opacity: .5;
+	transition: all ease .3s;
 }
 
 @media (min-width: 576px) {
