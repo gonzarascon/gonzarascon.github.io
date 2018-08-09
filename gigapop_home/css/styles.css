@@ -234,6 +234,10 @@ footer{
 	font-size: 1em;
 }
 
+.contact-form>*:focus::placeholder{opacity:0;}
+.contact-form>*:focus::-moz-placeholder{opacity:0;}
+.contact-form>*:focus::-webkit-input-placeholder{opacity:0;}
+
 .send-contact{
 	width: 50%;
 	margin: 0 auto;
