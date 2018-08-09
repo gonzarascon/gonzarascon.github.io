@@ -246,7 +246,7 @@ footer{
 }
 
 .send-contact:hover{
-	opacity: .5;
+	background-color: rgb(156, 48, 224);
 	transition: all ease .3s;
 }
 
