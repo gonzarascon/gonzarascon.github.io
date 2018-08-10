@@ -17,4 +17,20 @@ $(document).ready(function() {
 
 	//Start Animate on Scroll lib
 	AOS.init();
+
+
+	// Open menu on mobile
+	$('#open-menu').click(function(event) {
+		let menuButton = $(this);
+		let faIcon = menuButton.find('#menu-icon');
+		let mainNav = $('.main-nav');
+
+		if(menuButton.attr('data-menustate') == 'open') {
+			mainNav.slideUp();
+			menuButton.attr('data-menustate', 'closed');
+		} else{
+			mainNav.slideDown();
+			menuButton.attr('data-menustate', 'open');
+		}
+	});
 });
