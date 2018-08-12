@@ -20,17 +20,47 @@ $(document).ready(function() {
 
 
 	// Open menu on mobile
+	let menuButton = $('#open-menu');
+	let faIcon = menuButton.find('#menu-icon');
+	let mainNav = $('.main-nav');
 	$('#open-menu').click(function(event) {
-		let menuButton = $(this);
-		let faIcon = menuButton.find('#menu-icon');
-		let mainNav = $('.main-nav');
 
 		if(menuButton.attr('data-menustate') == 'open') {
 			mainNav.slideUp();
 			menuButton.attr('data-menustate', 'closed');
+			faIcon.removeClass('fa-times');
+			faIcon.addClass('fa-bars');
+
 		} else{
 			mainNav.slideDown();
 			menuButton.attr('data-menustate', 'open');
+			faIcon.removeClass('fa-bars');
+			faIcon.addClass('fa-times');
 		}
 	});
+
+	$('.menu-item').click(function(event) {
+		if (mobileIconVisible()) {
+
+			if (mainNav.is(':visible')) {
+					mainNav.slideUp();
+					faIcon.removeClass('fa-times');
+					faIcon.addClass('fa-bars');
+			} else {
+
+			}
+
+		} else{
+			console.log("Estas en desktop");
+		}
+	});
+
+	function mobileIconVisible(){
+		if (faIcon.is(':visible')) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 });
