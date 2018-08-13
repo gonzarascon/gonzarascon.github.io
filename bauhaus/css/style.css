@@ -20,13 +20,6 @@ html,body{
 	grid-auto-rows: 127px;
 }
 
-.info-grid{
-	grid-column: 2/6;
-	grid-row: 2/6;
-	display: grid;
-	grid-auto-rows: 85px;
-}
-
 .expo-name{
 	font-size: 2.5em;
 	font-weight: 900;
@@ -53,4 +46,84 @@ html,body{
 	font-weight: 500;
 	align-self: start;
 	margin: 0;
+}
+
+.info-grid{
+	grid-column: 2/6;
+	grid-row: 2/6;
+	display: grid;
+	grid-auto-rows: 85px;
+}
+
+.green-line{
+	grid-column: 1/7;
+	grid-row: 1/2;
+	height: 20px;
+	width: 100%;
+	background-color: #5EB769;
+	align-self: center;
+}
+
+.green-square{
+	grid-row: 1/2;
+	grid-column: 6/7;
+	justify-self: end;
+	align-self: center;
+	width: 40px;
+	height: 40px;
+	background-color: #FFFFF3;
+	border: 10px solid #5EB769;
+	border-radius: 50%;
+	margin-right: -2px;
+}
+
+.orange-line{
+	grid-column: 5/6;
+	grid-row: 1/7;
+	width: 20px;
+	background-color: #FF9624;
+	justify-self: center;
+}
+
+.orange-square{
+	grid-column: 5/6;
+	justify-self: center;
+	align-self: center;
+	grid-row: 3/5;
+	width: 80px;
+	height: 80px;
+	background-color: #FFFFF3;
+	border: 10px solid #FF9624;
+}
+
+.pink-line{
+	grid-column: 2/3;
+	grid-row: 1/7;
+	width: 20px;
+	background-color: #FF7BAC;
+	justify-self: center;
+}
+
+.pink-circle{
+	grid-row: 1/2;
+	grid-column: 2/3;
+	justify-self: center;
+	align-self: start;
+	width: 40px;
+	height: 40px;
+	background-color: #FFFFF3;
+	border: 10px solid #FF7BAC;
+	border-radius: 50%;
+	margin-top: -2px;
+}
+.pink-square{
+	grid-row: 6/7;
+	grid-column: 2/3;
+	justify-self: center;
+	align-self: end;
+	width: 40px;
+	height: 40px;
+	background-color: #FFFFF3;
+	border: 10px solid #FF7BAC;
+	margin-bottom: -2px;
 }
