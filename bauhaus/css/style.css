@@ -127,3 +127,29 @@ html,body{
 	border: 10px solid #FF7BAC;
 	margin-bottom: -2px;
 }
+
+.cyan-line{
+	grid-column: 1/7;
+	grid-row: 6/7;
+	height: 20px;
+	background-color: #5CADEA;
+	align-self: center;
+}
+
+.cyan-diamond{
+    width: 40px;
+    height: 40px;
+		background-color: #FFFFF3;
+		border: 10px solid #5CADEA;
+		grid-row: 6/7;
+		grid-column: 1/2;
+		justify-self: start;
+		align-self: center;
+}
+
+
+.info-item{transition: all ease .3s;}
+.info-item:hover{
+	transform: scale(1.5);
+	transition: all ease .3s;
+}
