@@ -1,0 +1,56 @@
+html,body{
+	margin:0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #FFFFF3;
+	overflow: hidden;
+}
+
+.six-grid{
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: repeat(6,1fr);
+}
+
+.main-grid{
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-auto-rows: 127px;
+}
+
+.info-grid{
+	grid-column: 2/6;
+	grid-row: 2/6;
+	display: grid;
+	grid-auto-rows: 85px;
+}
+
+.expo-name{
+	font-size: 2.5em;
+	font-weight: 900;
+	grid-column: 1/2;
+	grid-row: 3/6;
+	margin: 0;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	transform: rotate(180deg);
+	justify-self: end;
+}
+
+.museum-name{
+	grid-column: 3/6;
+	align-self: end;
+	margin: 0;
+	text-align: right;
+	font-weight: 700;
+}
+
+.date{
+	grid-column: 5/6;
+	text-align: right;
+	font-weight: 500;
+	align-self: start;
+	margin: 0;
+}
