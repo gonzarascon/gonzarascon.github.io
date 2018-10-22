@@ -1,0 +1,27 @@
+{
+    "homeSlides":
+    [
+        {
+            "image": "assets/imgs/main-slide-01.png",
+            "category": "Planeta Sustentable",
+            "title": "Eco-Reservas",
+            "content": "Las antiguas granjas se convirtieron en <strong>Eco-Reservas</strong>, espacios de agricultura y de cuidado animal, para preservar la fauna local y fomentar la buena alimentación de la Argentina.",
+            "button": false
+        },
+        {
+            "image": "assets/imgs/main-slide-02.png",
+            "category": "Derechos animales",
+            "title": "Asunto<br>público",
+            "content": "Hoy tenemos mayores controles sobre el comercio marítimo. Hemos erradicado el tráfico ilegal de animales en containers, los cuales se destinaban a actividades como las luchas clandestinas y el comercio ilegal.",
+            "button": false
+        },
+        {
+            "image": "assets/imgs/main-slide-03.png",
+            "category": "",
+            "title": "Ahora te <br> toca a vos",
+            "content": "Con tu voto podés llevarnos al Congreso de la Nación. Hacé realidad nuestras propuestas.",
+            "button": true,
+            "buttonLink": "about.html"
+        }
+    ]
+}

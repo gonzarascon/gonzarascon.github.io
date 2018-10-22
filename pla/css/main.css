@@ -1,0 +1,484 @@
+/* Font definitions */
+
+@font-face
+{
+    font-family: 'Univers LT Std';
+    src: url('../assets/fonts/UniversLTStd-Bold.woff2') format('woff2'),
+        url('../assets/fonts/UniversLTStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Univers LT Std';
+    src: url('../assets/fonts/UniversLTStd-Light.woff2') format('woff2'),
+        url('../assets/fonts/UniversLTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Univers LT Std';
+    src: url('../assets/fonts/UniversLTStd-BoldObl.woff2') format('woff2'),
+        url('../assets/fonts/UniversLTStd-BoldObl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'Univers LT Std';
+    src: url('../assets/fonts/UniversLTStd.woff2') format('woff2'),
+        url('../assets/fonts/UniversLTStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Color definitions */
+
+.purple
+{
+    color: #3E318F;
+}
+
+.bg-purple
+{
+    background-color: #3E318F;
+}
+
+/* End color definitions */
+
+
+/* Main definitions */
+
+html, body, .section, #main-slide, #fullpage
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+@media (min-width: 1200px)
+{
+    .container
+    {
+        max-width: 97%;
+    }
+}
+
+
+/* Index definitions */
+
+#main-page nav
+{
+    position: fixed;
+    z-index: 2;
+    top: 4%;
+    left: 0;
+    right: 0;
+    height: 10%;
+    min-height: 10%;
+}
+
+ #about-page header
+ {
+     position: fixed;
+     z-index: 2;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 15%;
+     min-height: 15%;
+     padding-top: 2%;
+ }
+
+#main-page .main-logo, #about-page .main-logo
+{
+    float: left;
+}
+
+#main-page .main-logo img, #about-page .main-logo img
+{
+    width: 70%;
+}
+
+#main-page .btn-hamburguer, #about-page .btn-hamburguer
+{
+    float: right;
+}
+
+#main-page .btn-hamburguer img, #about-page .btn-hamburguer img
+{
+    width: 40px;
+}
+
+#about-page header
+{
+    background-color: #3E318E;
+}
+
+/* Index > Main slider definitions */
+
+#main-page .section
+{
+    background-size: cover;
+}
+
+#main-slide span.category, #main-slide h2, #main-slide p, #main-slide a
+{
+    color: #fff;
+    font-family: "Univers LT Std";
+}
+
+#main-slide span.category
+{
+    font-weight: bold;
+}
+
+#main-slide h2
+{
+    font-weight: bold;
+    font-size: 6em;
+    text-transform: uppercase;
+}
+
+#main-slide p
+{
+    width: 40%;
+}
+
+#main-slide a
+{
+    text-transform: uppercase;
+    font-size: 1.125em;
+    display: inline-block;
+    padding: .5em .75em;
+    border: 1px solid white;
+    /*transition: 0.3s opacity;
+    text-decoration: none;*/
+    margin-top: 1em;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+#main-slide a:hover
+{
+    opacity: .7;
+}
+
+.relative-pos
+{
+    position: relative;
+}
+
+.content-wrapper
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Begin about styles */
+
+#about-main
+{
+    background: url(../assets/imgs/about-main.png);
+    background-size: cover;
+    text-align: center;
+}
+
+#about-us
+{
+    background: url(../assets/imgs/about-us.jpg);
+    background-size: cover;
+}
+
+#about-main .content-wrapper
+{
+    top:55%;
+    width: 100%;
+    color: #fff;
+    font-family: "Univers LT Std";
+}
+
+#about-main h1
+{
+    font-family: "Univers LT Std";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 6em;
+}
+
+#about-main ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 4em 0 0 0;
+}
+
+#about-main ul li
+{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+#about-main ul li a
+{
+    transition: 0.3s opacity ease;
+}
+
+#about-main ul li a:hover
+{
+    opacity: .7;
+}
+
+#about-main ul li:first-child
+{
+    margin-left: 0;
+}
+
+#about-main ul li img
+{
+    width: 3em;
+}
+
+.scroll-down
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-down img
+{
+    width: 6em;
+}
+
+.btn-join
+{
+    text-transform: uppercase;
+    font-size: 1.125em;
+    display: inline-block;
+    color: #7679F0;
+    border: 1px solid #7679F0;
+    padding: .5em .75em;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+#about-us .content-wrapper
+{
+    top: 60%;
+}
+
+#about-us span, #about-us p
+{
+    font-size: 1.125em;
+}
+
+#about-us span
+{
+    font-weight: bold;
+}
+
+#about-us h2, #about-politics h2, #about-economics h2, #about-social h2
+{
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 4em;
+}
+
+#about-us p, #about-politics p, #about-economics p, #about-social p
+{
+    color: #1E1E1E;
+}
+
+.about-breadcrumb-alt
+{
+    position: absolute;
+    top: 8em;
+}
+
+.about-breadcrumb-alt img
+{
+    width: 3em;
+}
+
+.about-breadcrumb-alt span
+{
+    font-family: "Univers LT Std";
+    color: #3E318E;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.member-card-asset img
+{
+    width: 8em;
+    margin-left: 2em;
+}
+
+.member-card-asset span
+{
+    display: block;
+    font-size: 0.9em;
+}
+
+.img-circle
+{
+    border-radius: 50%;
+}
+
+.member-card-asset
+{
+    float: left;
+    width: 20%;
+    box-shadow: 5px 5px 10px #aaa;
+    padding: 1em 2em 3em 2em;
+    margin: 8em 4em 0 0;
+    background-color: #F8F8F8;
+}
+
+#team-members-slider h3
+{
+    color: #3D3786;
+    font-weight: bold;
+    font-family: "Univers LT Std";
+    margin-top: .5em;
+}
+
+.member-card-information h3
+{
+    margin: .5em 0;
+    font-style: italic;
+}
+
+.member-card-information p
+{
+    font-size: .9em;
+}
+
+.member-card-information
+{
+    float: left;
+    width: 40%;
+    margin-top: 8em;
+}
+
+.member-card-information .member-rank
+{
+    color: #7679F0;
+    font-size: 1.125em;
+}
+
+.fp-slidesNav
+{
+    left: 6em !important;
+}
+
+.fullwidthheight
+{
+    width: 100%;
+    height: 100%;
+}
+
+#about-contact
+{
+    background-color: #1E1E1E;
+}
+
+.contact-form
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.contact-form .content-wrapper
+{
+    width: 100%;
+}
+
+.contact-form .form-inline .form-control
+{
+    
+}
+
+.contact-form h2
+{
+    font-weight: bold;
+    font-family: "Univers LT Std";
+    font-size: 3em;
+}
+
+#about-contact .btn-primary
+{
+    border-radius: 0;
+    border: none;
+    background-color: #7679F0;
+}
+
+#about-contact .btn-primary img
+{
+    width: .75em;
+    margin-bottom: 0 !important;
+}
+
+#about-contact .form-control
+{
+    border-radius: 0 !important;
+    border: none;
+    margin-right: 1em;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6em;
+    background: url(../assets/imgs/footer.svg);
+    background-size: cover;
+    z-index: 3;
+}
+
+footer ul
+{
+    list-style-type: none;
+    float: right;
+    width: 26.5%;
+    margin-top: 2.5%;
+}
+
+footer li
+{
+    display: inline-block;
+    float: left;
+    margin-left: 1em;
+}
+
+footer li img
+{
+    height: 1.5em;
+}
+
+/* End about styles */
