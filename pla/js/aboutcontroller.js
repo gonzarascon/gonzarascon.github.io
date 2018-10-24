@@ -1,5 +1,7 @@
 // About Javascript
 
+var FINAL_SLIDE = 6;
+
 $(document).ready(function()
 {
     Init();
@@ -20,7 +22,27 @@ function CreateFullPageSlider()
         autoScrolling:true,
         scrollHorizontally: true,
         controlArrows: false,
-        slidesNavigation: true
+        slidesNavigation: true,
+
+        onLeave: function(origin, destination, direction)
+        {
+            console.info(origin.index, destination.index, direction);
+            var header = document.querySelector("header");
+            if (destination.index == FINAL_SLIDE)
+            {
+                if (!header.classList.contains("invisible-bg"))
+                {
+                    header.classList.add("invisible-bg");
+                }
+            }
+            else
+            {
+                if (header.classList.contains("invisible-bg"))
+                {
+                    header.classList.remove("invisible-bg");
+                }
+            }
+        }
     });
 }
 

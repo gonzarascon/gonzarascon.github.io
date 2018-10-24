@@ -326,6 +326,17 @@ a:hover
 .about-breadcrumb-alt img
 {
     width: 3em;
+    margin-right: 1em;
+}
+
+header
+{
+    transition: 1s background ease;
+}
+
+.invisible-bg
+{
+    background: none !important;
 }
 
 .about-breadcrumb-alt span
@@ -338,8 +349,8 @@ a:hover
 
 .member-card-asset img
 {
-    width: 8em;
-    margin-left: 2em;
+    width: 10em;
+    margin-left: 1em;
 }
 
 .member-card-asset span
@@ -356,9 +367,9 @@ a:hover
 .member-card-asset
 {
     float: left;
-    width: 20%;
+    width: 25%;
     box-shadow: 5px 5px 10px #aaa;
-    padding: 1em 2em 3em 2em;
+    padding: 2em 2em 5em 2em;
     margin: 8em 4em 0 0;
     background-color: #F8F8F8;
 }
@@ -397,7 +408,7 @@ a:hover
 
 .fp-slidesNav
 {
-    left: 6em !important;
+    left: 8em !important;
 }
 
 .fullwidthheight
@@ -466,7 +477,7 @@ footer
     bottom: 0;
     left: 0;
     right: 0;
-    height: 6em;
+    height: 7.5em;
     background: url(../assets/imgs/footer.svg);
     background-size: cover;
     z-index: 3;
@@ -476,8 +487,8 @@ footer ul
 {
     list-style-type: none;
     float: right;
-    width: 26.5%;
-    margin-top: 2.5%;
+    width: 27.5%;
+    margin-top: 3.5%;
 }
 
 footer li
@@ -489,7 +500,7 @@ footer li
 
 footer li img
 {
-    height: 1.5em;
+    height: 1.6em;
 }
 
 /* End about styles */

@@ -13,14 +13,16 @@
     </head>
     <body id="about-page">
         <header class="container-fluid">
-            <nav>
-                <div class="main-logo">
-                    <img src="assets/imgs/logo-white.svg" alt="PLA">
-                </div>
-                <div class="btn-hamburguer">
-                    <a href="#"><img src="assets/imgs/hamburguer.svg" alt="menu"></a>
-                </div>
-            </nav>
+            <div class="container">
+                <nav>
+                    <div class="main-logo">
+                        <img src="assets/imgs/logo-white.svg" alt="PLA">
+                    </div>
+                    <div class="btn-hamburguer">
+                        <a href="#"><img src="assets/imgs/hamburguer.svg" alt="menu"></a>
+                    </div>
+                </nav>
+            </div>
         </header>
 
         <div id="fullpage">
@@ -37,7 +39,7 @@
                     </div>
                 </div>
                 <div class="scroll-down">
-                    <img src="assets/imgs/scroll-down.svg" alt="">
+                    <a onClick="javascript:fullpage_api.moveSectionDown();" style="cursor:pointer"><img src="assets/imgs/scroll-down.svg" alt=""></a>
                 </div>
             </div>
             <div id="about-us" class="section">
@@ -64,7 +66,7 @@
 
                 </div>
             </div>
-            <!--
+
             <div id="about-politics" class="section">
                 <div class="container relative-pos">
                     <div class="about-breadcrumb-alt">
@@ -118,7 +120,7 @@
                     </div>
                 </div>
             </div>
-            -->
+
             <div id="about-contact" class="section">
                 <div class="fullwidthheight relative-pos">
                     <div class="contact-form">
@@ -127,11 +129,11 @@
                                 <div class="col-12">
                                     <h2>MANTENGAMONOS CONECTADOS <br>PARA LOGRAR ESTE CAMBIO</h2>
                                 </div>
-                                <div class="col-5">
+                                <div class="col-3">
                                     <form class="form-inline" action="index.html" method="post">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email1" placeholder="tuemail@dominio.com">
-                                            <button type="submit" class="btn btn-primary"><img src="assets/imgs/arrow-right.svg" alt="Enviar"></button>
+                                            <input type="email" class="form-control" id="email1" placeholder="tuemail@dominio.com" style="width:16em">
+                                            <button type="submit" class="btn btn-primary" style="width:38px;height:38px"><img src="assets/imgs/arrow-right.svg" alt="Enviar"></button>
                                         </div>
                                     </form>
                                 </div>
