@@ -347,10 +347,10 @@ header
     font-style: italic;
 }
 
-.member-card-asset img
-{
+.member-card-asset img{
+    display: block;
     width: 10em;
-    margin-left: 1em;
+    margin: 0 auto;
 }
 
 .member-card-asset span
