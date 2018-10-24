@@ -34,7 +34,7 @@
             "quote": "Algún día la humanidad será juzgada por haber encerrado a los primates en zoológicos",
             "content": "<p>Nacida en Estados Unidos, pero con raíces muy argentinas, Carla decidió volver a su país de grande. Sus inicios en la defensoría por la naturaleza sucedieron cuando un grupo de compañeros de trabajo le comentaron sobre el PLA.</p><p>Decidió informarse más sobre la propuesta y contactada personalmente por Joaquín y Natalia, aceptó unirse al grupo.</p>"
         },
-                {
+      {
             "image": "assets/imgs/alexander-kleiber.png",
             "name": "Alexander Kleiber",
             "age": "— 31 años",
@@ -44,6 +44,6 @@
             "rank": "Portavoz del PLA",
             "quote": "Si un hombre aspira a una vida correcta, su primer acto de abstinencia es el de lastimar animales",
             "content": "<p>Nacido en Hannover, Alemania. Alexander supo de pequeño que su amor por los animales era innato. Luego de asistir a una charla sobre un voluntariado de cuidado ambiental, decidió sumarse a Greenpeace Alemania.</p><p>Con sus estudios finalizados como Comunicador Social, decidió realizar un intercambio con colaboradores de Argentina. Fue allí donde conoció a Natalia y al equipo.</p>"
-        },
+        }
     ]
 }
