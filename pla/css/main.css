@@ -52,13 +52,13 @@
 
 
 /* Main definitions */
-
 html, body, .section, #main-slide, #fullpage
 {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+		scroll-behavior:smooth;
 }
 
 .container, .container-fluid
@@ -439,10 +439,10 @@ header
     width: 100%;
 }
 
-.contact-form .form-inline .form-control
+/* .contact-form .form-inline .form-control
 {
 
-}
+} */
 
 .contact-form h2
 {
