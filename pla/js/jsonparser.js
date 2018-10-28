@@ -10,6 +10,10 @@ function JsonParseHomeSlides(data)
     {
         var section = document.createElement("div");
         section.classList.add("section");
+        if(slidesData[i].single == true)
+        {
+            section.classList.add("single");
+        }
         for(var j = 0;j < slidesData[i].slides.length; j++)
         {
             var slide = slidesData[i].slides[j];

@@ -5,16 +5,16 @@
             "slides":
             [
                 {
-                    "image": "assets/imgs/main-slide-01.png",
+                    "image": "assets/imgs/main-slide-01a.png",
                     "category": "Planeta Sustentable",
-                    "title": "Eco-Reservas1",
-                    "content": "Las antiguas granjas se convirtieron en <strong>Eco-Reservas</strong>, espacios de agricultura y de cuidado animal, para preservar la fauna local y fomentar la buena alimentación de la Argentina.",
+                    "title": "Granjas de <br> explotación",
+                    "content": "La mayoría de nosotros, cuando vamos a comprar no nos paramos a pensar de donde proviene el pollo o los huevos que compramos, y el trayecto que han seguido hasta llegar al expositor del supermercado, y aunque este artículo también pueda herir ciertas sensibilidades.",
                     "button": false
                 },
                 {
                     "image": "assets/imgs/main-slide-01.png",
                     "category": "Planeta Sustentable",
-                    "title": "Eco-Reservas2",
+                    "title": "Eco-Reservas",
                     "content": "Las antiguas granjas se convirtieron en <strong>Eco-Reservas</strong>, espacios de agricultura y de cuidado animal, para preservar la fauna local y fomentar la buena alimentación de la Argentina.",
                     "button": false
                 }
@@ -24,18 +24,57 @@
             "slides":
             [
                 {
-                    "image": "assets/imgs/main-slide-02.png",
+                    "image": "assets/imgs/main-slide-02a.png",
                     "category": "Derechos animales",
-                    "title": "Asunto<br>público1",
-                    "content": "Hoy tenemos mayores controles sobre el comercio marítimo. Hemos erradicado el tráfico ilegal de animales en containers, los cuales se destinaban a actividades como las luchas clandestinas y el comercio ilegal.",
+                    "title": "Tráfico <br>ilegal",
+                    "content": "Al no existir un control, la voracidad ha debilitado a muchas especies en la región. Cuando acabamos con una especie, seguimos con la otra y así vamos arrasando con nuestros animales.",
                     "button": false
                 },
                 {
                     "image": "assets/imgs/main-slide-02.png",
                     "category": "Derechos animales",
-                    "title": "Asunto<br>público2",
+                    "title": "Asunto<br>público",
                     "content": "Hoy tenemos mayores controles sobre el comercio marítimo. Hemos erradicado el tráfico ilegal de animales en containers, los cuales se destinaban a actividades como las luchas clandestinas y el comercio ilegal.",
                     "button": false
+                }
+            ]
+        },
+        {
+            "slides":
+            [
+                {
+                    "image": "assets/imgs/main-slide-04.png",
+                    "category": "Experimentación animal",
+                    "title": "Ciencia con <br>animales",
+                    "content": "La experimentación con animales para prever el desarrollo de enfermedades en seres humanos y comprobar la toxicidad o eficacia de medicamentos es en realidad <strong>tan cara como inútil.</strong>",
+                    "button": false
+                },
+                {
+                    "image": "assets/imgs/main-slide-04b.png",
+                    "category": "Experimentación animal",
+                    "title": "Ética en el <br>laboratorio",
+                    "content": "Las principales organizaciones argentinas se comprometieron en septiembre del 2018 a aumentar la transparencia de sus experimentos, <strong>prohibiendo en absoluto la prueba en animales.</strong>",
+                    "button": false
+                }
+            ]
+        },
+        {
+            "slides":
+            [
+                {
+                    "image": "assets/imgs/main-slide-03b.png",
+                    "category": "Extinción animal",
+                    "title": "Guacamayo <br> verde",
+                    "content": "La pérdida de hábitat y especialmente el grave problema de la captura de ejemplares libres para venderlos como mascotas son las principales amenazas. Los ejemplares capturados son enviados a otras partes del mundo al mejor postor.",
+                    "button": false
+                },
+                {
+                    "image": "assets/imgs/main-slide-03.png",
+                    "category": "",
+                    "title": "Ahora te <br> toca a vos",
+                    "content": "Con tu voto podés llevarnos al Congreso de la Nación. Hacé realidad nuestras propuestas.",
+                    "button": true,
+                    "buttonLink": "about.html"
                 }
             ]
         },
@@ -45,12 +84,13 @@
                 {
                     "image": "assets/imgs/main-slide-03.png",
                     "category": "",
-                    "title": "Ahora te <br> toca a vos1",
+                    "title": "Ahora te <br> toca a vos",
                     "content": "Con tu voto podés llevarnos al Congreso de la Nación. Hacé realidad nuestras propuestas.",
                     "button": true,
                     "buttonLink": "about.html"
                 }
-            ]
+            ],
+            "single": true
         }
     ]
 }

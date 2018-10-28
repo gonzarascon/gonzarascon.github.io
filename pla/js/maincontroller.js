@@ -2,7 +2,7 @@
 
 // CONSTANTS
 
-var SLIDER_IDLE_TIME = 10000;
+var SLIDER_IDLE_TIME = 1000;
 
 var allowSlideTransition = true;
 var sectionsTotal = -1;
@@ -45,9 +45,8 @@ function CreateFullPageSlider()
 
         afterLoad: function(origin, destination, direction)
         {
-            if (destination.index != sectionsTotal)
+            if (destination.item.classList.contains("single") != true)
             {
-                console.info("Titolog: ", origin, destination)
                 AnimateTimeLapseBar();
                 timer = setInterval(function()
                 {
@@ -66,7 +65,7 @@ function CreateFullPageSlider()
 
         onLeave: function(origin, destination, direction)
         {
-            if (origin.index != sectionsTotal)
+            if (origin.item.classList.contains("single") != true)
             {
                 ResetTimeLapseBar();
                 var childrenSlides = origin.item.querySelectorAll(".slide");
@@ -79,8 +78,6 @@ function CreateFullPageSlider()
                 {
                     origin.item.querySelectorAll(".slide")[1].classList.remove("active");
                 }
-                console.info(childrenSlides[0]);
-                console.info(childrenSlides[1]);
                 // TODO: When returning to previous section, set main slide to 0.
                 //$.fn.fullpage.scrollSlider(destination, 0);
             }
