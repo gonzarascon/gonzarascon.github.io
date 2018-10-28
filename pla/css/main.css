@@ -53,7 +53,7 @@
 
 /* Main definitions */
 
-html, body, .section, #main-slide, #fullpage
+html, body, .section, #main-slide, #fullpage, .slide
 {
     width: 100%;
     height: 100%;
@@ -501,6 +501,24 @@ footer li
 footer li img
 {
     height: 1.6em;
+}
+
+/* Hide arrow navigation */
+.fp-controlArrow
+{
+    display: none;
+}
+
+.time-lapse-bar
+{
+    position: fixed;
+    bottom: 0;
+    height: 10px;
+    left: 0;
+    width: 0%;
+    opacity: 0.2;
+    background-color: white;
+    z-index: 2;
 }
 
 /* End about styles */

@@ -8,47 +8,60 @@ function JsonParseHomeSlides(data)
     slides.setAttribute("id", "fullpage");
     for(i = 0; i < slidesData.length; i++)
     {
-        var slide = document.createElement("div");
-        var id = "slide-" + (i + 1).toString();
-
-        slide.setAttribute("class", "section");
-        slide.setAttribute("style", "background: url(" + slidesData[i].image + "); background-size:cover;");
-
-        var slideContent = document.createElement("div");
-        slideContent.classList.add("container");
-        slideContent.classList.add("relative-pos");
-
-        var slideContentWrapper = document.createElement("div");
-        slideContentWrapper.classList.add("content-wrapper");
-
-        // Begin content adding
-        var categoryLabel = document.createElement("span");
-        categoryLabel.innerText = slidesData[i].category;
-        categoryLabel.classList.add("category");
-
-        var titleLabel = document.createElement("h2");
-        titleLabel.innerHTML = slidesData[i].title;
-
-        var contentText = document.createElement("p");
-        contentText.innerHTML = slidesData[i].content;
-
-        slideContentWrapper.appendChild(categoryLabel);
-        slideContentWrapper.appendChild(titleLabel);
-        slideContentWrapper.appendChild(contentText);
-
-        if (slidesData[i].button == true)
+        var section = document.createElement("div");
+        section.classList.add("section");
+        for(var j = 0;j < slidesData[i].slides.length; j++)
         {
-            var linkButton = document.createElement("a");
-            linkButton.innerText = "Involucrate";
-            linkButton.setAttribute("href", slidesData[i].buttonLink);
-            slideContentWrapper.appendChild(linkButton);
+            var slide = slidesData[i].slides[j];
+            section.appendChild(createSlide(slide));
         }
-        // End content adding
-        slideContent.appendChild(slideContentWrapper);
-        slide.appendChild(slideContent);
-        slides.appendChild(slide);
+        slides.appendChild(section);
+        sectionsTotal++;
     }
     return slides;
+}
+
+function createSlide(data)
+{
+    var slide = document.createElement("div");
+
+    slide.setAttribute("class", "slide");
+    slide.setAttribute("style", "background: url(" + data.image + "); background-size:cover;");
+
+    var slideContent = document.createElement("div");
+    slideContent.classList.add("container");
+    slideContent.classList.add("relative-pos");
+
+    var slideContentWrapper = document.createElement("div");
+    slideContentWrapper.classList.add("content-wrapper");
+
+    // Begin content adding
+    var categoryLabel = document.createElement("span");
+    categoryLabel.innerText = data.category;
+    categoryLabel.classList.add("category");
+
+    var titleLabel = document.createElement("h2");
+    titleLabel.innerHTML = data.title;
+
+    var contentText = document.createElement("p");
+    contentText.innerHTML = data.content;
+
+    slideContentWrapper.appendChild(categoryLabel);
+    slideContentWrapper.appendChild(titleLabel);
+    slideContentWrapper.appendChild(contentText);
+
+    if (data.button == true)
+    {
+        var linkButton = document.createElement("a");
+        linkButton.innerText = "Involucrate";
+        linkButton.setAttribute("href", data.buttonLink);
+        slideContentWrapper.appendChild(linkButton);
+    }
+    // End content adding
+    slideContent.appendChild(slideContentWrapper);
+    slide.appendChild(slideContent);
+
+    return slide;
 }
 
 function JsonParseTeamMembers(data)
