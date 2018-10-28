@@ -52,13 +52,18 @@
 
 
 /* Main definitions */
+<<<<<<< HEAD
 
 html, body, .section, #main-slide, #fullpage, .slide
+=======
+html, body, .section, #main-slide, #fullpage
+>>>>>>> 1ea22d83f928b06a961482e194df48a3f237edbc
 {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+		scroll-behavior:smooth;
 }
 
 .container, .container-fluid
@@ -205,7 +210,7 @@ a:hover
 
 #about-main
 {
-    background: url(../assets/imgs/about-main.png);
+    background: url(../assets/imgs/about-main.jpg);
     background-size: cover;
     text-align: center;
 }
@@ -347,10 +352,10 @@ header
     font-style: italic;
 }
 
-.member-card-asset img
-{
+.member-card-asset img{
+    display: block;
     width: 10em;
-    margin-left: 1em;
+    margin: 0 auto;
 }
 
 .member-card-asset span
@@ -439,10 +444,10 @@ header
     width: 100%;
 }
 
-.contact-form .form-inline .form-control
+/* .contact-form .form-inline .form-control
 {
 
-}
+} */
 
 .contact-form h2
 {

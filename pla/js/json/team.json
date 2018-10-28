@@ -5,41 +5,45 @@
             "image": "assets/imgs/natalia-andre.png",
             "name": "Natalia André",
             "age": "— 32 años",
-            "fact1": "— Abogada especialista en derecho animal",
-            "fact2": "— Activista desde los 16 años ",
+            "fact1": "— Abogada especialista en Derecho Animal",
+            "fact2": "— Activista desde los 16 años",
+            "fact3": "— natalia_andre@pla.com.ar",
             "rank": "Presidente del PLA",
-            "quote": "Los animales merecen respeto. Son los grandes excluidos de las leyes, que son insuficientes a la hora de          protegerlos",
-            "content": "<p>Oriunda de la provincia de Entre Ríos, Natalia André se vió involucrada toda su vida con el activismo por el cuidado de la Fauna. Descendiente de una familia dedicada al criado de ganado para la venta y exposición, Natalia estuvo en constante conflico con su círculo familiar dado que creía que era un negocio de explotación para con otros seres vivos.</p><p>Desde que vió como sacrificaban a un ternero en la granja familiar, Natalia decidió fundar el PLA para acabar con el maltrato animal en el País y poder realizar un cambio.</p>"
+            "quote": "Los animales merecen respeto. Son los grandes excluidos de las leyes, que son insuficientes a la hora de protegerlos",
+            "content": "<p>Oriunda de la provincia de Entre Ríos, Natalia se vió involucrada toda su vida con el activismo por el cuidado de la fauna. Descendiente de una familia dedicada al criado de ganado para la venta y exposición, Natalia estuvo en constante conflico con su círculo familiar dado que creía que era un negocio de explotación para con otros seres vivos.</p><p>Cansada de ver las injusticias que se cometían, Natalia ingresar a la facultad de Derecho y más tarde fundar el PLA para acabar con el maltrato animal en el país y poder realizar un cambio.</p>"
         },
         {
             "image": "assets/imgs/joaquin-aguirre.png",
             "name": "Joaquín Aguirre",
             "age": "— 36 años",
             "fact1": "— Ingeniero agrónomo",
-            "fact2": "— Vegana",
-            "rank": "Vice presidente del PLA",
-            "quote": "La tierra es suficiente para todos, pero no para la voracidad de los consumidores ",
-            "content": "<p></p><p></p>"
+            "fact2": "— Maestría en Protección vegetal",
+            "fact3": "— joaquin_aguirre@pla.com.ar",
+            "rank": "Vicepresidente del PLA",
+            "quote": "La tierra es suficiente para todos, pero no para la voracidad de los consumidores",
+            "content": "<p>Oriundo de la ciudad de Rawson, Joaquín trabajó varios años la industria agrónoma, hasta que decidió renunciar, viajar a España donde conoció a Natalia. Juntos se propusieron movilizarse, en búsqueda de un futuro mejor.</p><p>Instalado en Europa, decidió volver a la Argentina con el fin de colaborar con mayor fuerza en el partido.</p>"
         },
         {
-            "image": "assets/imgs/natalia-andre.png",
+            "image": "assets/imgs/carla-gutierrez.png",
             "name": "Carla Gutierrez",
             "age": "— 29 años",
-            "fact1": "— Activista por el cuidado animal desde los 18",
-            "fact2": "— Vegana",
-            "rank": "Presidente del PLA",
-            "quote": "Reconocer al animal como un semejante a ti mismo",
-            "content": "<p>Oriunda de la provincia de Entre Ríos, Natalia André se vió involucrada toda su vida con el activismo por el cuidado de la Fauna. Descendiente de una familia dedicada al criado de ganado para la venta y exposición, Natalia estuvo en constante conflico con su círculo familiar dado que creía que era un negocio de explotación para con otros seres vivos.</p><p>Desde que vió como sacrificaban a un ternero en la granja familiar, Natalia decidió fundar el PLA para acabar con el maltrato animal en el País y poder realizar un cambio.</p>"
+            "fact1": "— Médica veterinaria",
+            "fact2": "— Especialista en acuariología",
+            "fact3": "— carla_gutierrez@pla.com.ar",
+            "rank": "Tesorera del PLA",
+            "quote": "Algún día la humanidad será juzgada por haber encerrado a los primates en zoológicos",
+            "content": "<p>Nacida en Estados Unidos, pero con raíces muy argentinas, Carla decidió volver a su país de grande. Sus inicios en la defensoría por la naturaleza sucedieron cuando un grupo de compañeros de trabajo le comentaron sobre el PLA.Decidió informarse más sobre la propuesta y contactada personalmente por Joaquín y Natalia, aceptó unirse al grupo.</p>"
         },
-        {
-            "image": "assets/imgs/natalia-andre.png",
-            "name": "Natalia André",
-            "age": "— 30 años",
-            "fact1": "— Activista por el cuidado animal desde los 18",
-            "fact2": "— Vegana",
-            "rank": "Presidente del PLA",
-            "quote": "Reconocer al animal como un semejante a ti mismo",
-            "content": "<p>Oriunda de la provincia de Entre Ríos, Natalia André se vió involucrada toda su vida con el activismo por el cuidado de la Fauna. Descendiente de una familia dedicada al criado de ganado para la venta y exposición, Natalia estuvo en constante conflico con su círculo familiar dado que creía que era un negocio de explotación para con otros seres vivos.</p><p>Desde que vió como sacrificaban a un ternero en la granja familiar, Natalia decidió fundar el PLA para acabar con el maltrato animal en el País y poder realizar un cambio.</p>"
+      {
+            "image": "assets/imgs/alexander-kleiber.png",
+            "name": "Alexander Kleiber",
+            "age": "— 31 años",
+            "fact1": "— Licenciado en Comunicación Social",
+            "fact2": "— Responsable de comunicación regional de Greenpeace Alemania",
+            "fact3": "— alexander_kleiber@pla.com.ar",
+            "rank": "Portavoz del PLA",
+            "quote": "Si un hombre aspira a una vida correcta, su primer acto de abstinencia es el de lastimar animales",
+            "content": "<p>Nacido en Hannover, Alemania. Alexander supo de pequeño que su amor por los animales era innato. Luego de asistir a una charla sobre un voluntariado de cuidado ambiental, decidió sumarse a Greenpeace Alemania.Con sus estudios finalizados como Comunicador Social, decidió realizar un intercambio con colaboradores de Argentina. Fue allí donde conoció a Natalia y al equipo.</p>"
         }
     ]
 }
