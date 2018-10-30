@@ -52,18 +52,14 @@
 
 
 /* Main definitions */
-<<<<<<< HEAD
 
 html, body, .section, #main-slide, #fullpage, .slide
-=======
-html, body, .section, #main-slide, #fullpage
->>>>>>> 1ea22d83f928b06a961482e194df48a3f237edbc
 {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-		scroll-behavior:smooth;
+	scroll-behavior:smooth;
 }
 
 .container, .container-fluid
@@ -524,6 +520,26 @@ footer li img
     opacity: 0.2;
     background-color: white;
     z-index: 2;
+}
+
+#about-politics, #about-economics, #about-social
+{
+    background-size: cover !important;
+}
+
+#about-politics
+{
+    background: url(../assets/imgs/about-politics.png);
+}
+
+#about-economics
+{
+    background: url(../assets/imgs/about-economics.png);
+}
+
+#about-social
+{
+    background: url(../assets/imgs/about-social.png);
 }
 
 /* End about styles */
