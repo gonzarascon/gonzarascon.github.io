@@ -1,0 +1,4 @@
+//homeslides.json
+
+Primer Slide : Contenido
+La mayoría de nosotros, no nos paramos a pensar de donde provienen el pollo o los huevos que compramos, y el trayecto que han seguido hasta llegar al expositor del supermercado, y aunque este artículo también pueda herir ciertas sensibilidades.
