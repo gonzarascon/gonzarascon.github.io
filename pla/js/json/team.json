@@ -2,7 +2,7 @@
     "teamMembers":
     [
         {
-            "image": "assets/imgs/natalia-andre.png",
+            "image": "assets/imgs/carla-gutierrez.png",
             "name": "Natalia André",
             "age": "— 32 años",
             "fact1": "— Abogada especialista en Derecho Animal",
@@ -24,7 +24,7 @@
             "content": "<p>Oriundo de la ciudad de Rawson, Joaquín trabajó varios años la industria agrónoma, hasta que decidió renunciar, viajar a España donde conoció a Natalia. Juntos se propusieron movilizarse, en búsqueda de un futuro mejor.</p><p>Instalado en Europa, decidió volver a la Argentina con el fin de colaborar con mayor fuerza en el partido.</p>"
         },
         {
-            "image": "assets/imgs/carla-gutierrez.png",
+            "image": "assets/imgs/natalia-andre.png",
             "name": "Carla Gutierrez",
             "age": "— 29 años",
             "fact1": "— Médica veterinaria",
