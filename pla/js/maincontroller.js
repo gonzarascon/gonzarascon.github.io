@@ -2,7 +2,7 @@
 
 // CONSTANTS
 
-var SLIDER_IDLE_TIME = 8000;
+var SLIDER_IDLE_TIME = 10000;
 
 var allowSlideTransition = true;
 var sectionsTotal = -1;
