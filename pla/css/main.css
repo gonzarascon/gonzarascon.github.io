@@ -432,7 +432,7 @@ header
     height: 100%;
     color: #fff;
     z-index: 2;
-    text-align: center;
+    font-family: "Univers LT Std";
 }
 
 .contact-form .content-wrapper
@@ -450,6 +450,18 @@ header
     font-weight: bold;
     font-family: "Univers LT Std";
     font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.contact-form .socialmedia img
+{
+    margin-top: 1em;
+    height: 1.5em;
+}
+
+.contact-form h4
+{
+    margin-bottom: 1em;
 }
 
 #about-contact .btn-primary
@@ -540,6 +552,66 @@ footer li img
 #about-social
 {
     background: url(../assets/imgs/about-social.png);
+}
+
+#proposal
+{
+    margin-top: 15%;
+    font-family: 'Univers LT Std';
+}
+
+#proposal h1
+{
+    text-transform: uppercase;
+    color: #3D348B;
+    font-weight: bold;
+    margin-bottom: 7%;
+    font-size: 3em;
+}
+
+.proposal-law
+{
+    margin-bottom: 10%;
+}
+
+#proposal h3
+{
+    text-transform: uppercase;
+    color: #3D348B;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#proposal img
+{
+    width: 120%;
+}
+
+.btn-pla-border
+{
+    display: inline-block;
+    border: 1px solid #3D348B;
+    color:  #3D348B;
+    font-family: 'Univers LT Std';
+    transition: 0.3s opacity ease;
+    padding: .5em;
+}
+
+.btn-pos-bottom
+{
+    position: absolute;
+    bottom: 10%;
+}
+
+.btn-pla-border:hover
+{
+    opacity: .7;
+}
+
+.btn-right-marginbottom
+{
+    float: right;
+    margin-bottom: 10%;
 }
 
 /* End about styles */
