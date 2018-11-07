@@ -461,7 +461,8 @@ header
 
 .contact-form h4
 {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+    font-size: 2em;
 }
 
 #about-contact .btn-primary
@@ -481,7 +482,7 @@ header
 {
     border-radius: 0 !important;
     border: none;
-    margin-right: 1em;
+    margin-right: 1.5em;
 }
 
 footer
