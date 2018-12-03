@@ -1,0 +1,75 @@
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-column-gap: 30px; grid-row-gap: 40px; }
+
+.grid_1{ grid-column: span 1; }
+.grid_2{ grid-column: span 2; }
+.grid_3{ grid-column: span 3; }
+.grid_4{ grid-column: span 4; }
+.grid_5{ grid-column: span 5; }
+.grid_6{ grid-column: span 6; }
+.grid_7{ grid-column: span 7; }
+.grid_8{ grid-column: span 8; }
+.grid_9{ grid-column: span 9; }
+.grid_10{ grid-column: span 10; }
+.grid_11{ grid-column: span 11; }
+.grid_12{ grid-column: span 12; }
+
+.grid_mb_1{ grid-column: span 1; }
+.grid_mb_2{ grid-column: span 2; }
+.grid_mb_3{ grid-column: span 3; }
+.grid_mb_4{ grid-column: span 4; }
+.grid_mb_5{ grid-column: span 5; }
+.grid_mb_6{ grid-column: span 6; }
+.grid_mb_7{ grid-column: span 7; }
+.grid_mb_8{ grid-column: span 8; }
+.grid_mb_9{ grid-column: span 9; }
+.grid_mb_10{ grid-column: span 10; }
+.grid_mb_11{ grid-column: span 11; }
+.grid_mb_12{ grid-column: span 12; }
+
+.grid_5_col { grid-template-columns: repeat(5, 1fr); }
+
+
+@media screen and (max-width: 1200px) {
+
+.grid_in_1{ grid-column: span 1; }
+.grid_in_2{ grid-column: span 2; }
+.grid_in_3{ grid-column: span 3; }
+.grid_in_4{ grid-column: span 4; }
+.grid_in_5{ grid-column: span 5; }
+.grid_in_6{ grid-column: span 6; }
+.grid_in_7{ grid-column: span 7; }
+.grid_in_8{ grid-column: span 8; }
+.grid_in_9{ grid-column: span 9; }
+.grid_in_10{ grid-column: span 10; }
+.grid_in_11{ grid-column: span 11; }
+.grid_in_12{ grid-column: span 12; }
+
+}
+
+@media screen and (max-width: 768px) {
+	.grid_3 { grid-column: span 6; }
+	.grid_2,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_in_6 { grid-column: span 12; }
+
+
+	.grid_tb_1{ grid-column: span 1; }
+	.grid_tb_2{ grid-column: span 2; }
+	.grid_tb_3{ grid-column: span 3; }
+	.grid_tb_4{ grid-column: span 4; }
+	.grid_tb_5{ grid-column: span 5; }
+	.grid_tb_6{ grid-column: span 6; }
+	.grid_tb_7{ grid-column: span 7; }
+	.grid_tb_8{ grid-column: span 8; }
+	.grid_tb_9{ grid-column: span 9; }
+	.grid_tb_10{ grid-column: span 10; }
+	.grid_tb_11{ grid-column: span 11; }
+	.grid_tb_12{ grid-column: span 12; }
+
+}
+
+@media screen and (max-width: 480px) {
+	.grid > * { grid-column: span 12; }
+}
