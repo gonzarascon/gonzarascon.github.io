@@ -1,3 +1,9 @@
 body{
 	font-family: 'Cereal', Arial, Helvetica, sans-serif;
+	background: #ECECEC;
+}
+
+main{
+	background: url(../assets/img/diamond-pattern.png);
+	background-position: center;
 }
