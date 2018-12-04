@@ -66,6 +66,7 @@ ol,ul{
 .relative{position: relative;}
 .absolute{position: absolute;}
 .sticky{position: sticky;}
+.fixed{position: fixed;}
 
 .text-uppercase{text-transform: uppercase;}
 .text-center{text-align: center;}
@@ -116,6 +117,7 @@ ol,ul{
 	justify-self: center;
 	align-self: center;
 }
+.space-between{justify-content: space-between;}
 
 .bg-image{
 	background-size: cover !important;
@@ -149,6 +151,12 @@ ol,ul{
 .block{display: block;}
 .flex{display: flex;}
 .none{display: none;}
+
+
+.full-height{
+	/* change last value for the actual header size  */
+	height: calc(100vh - 120px);
+}
 /* End of Utility classes */
 
 @media screen and (max-width: 768px) {

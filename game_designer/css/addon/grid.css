@@ -13,6 +13,19 @@
 .grid_11{ grid-column: span 11; }
 .grid_12{ grid-column: span 12; }
 
+.end_1{grid-column-end: -1;}
+.end_2{grid-column-end: -2;}
+.end_3{grid-column-end: -3;}
+.end_4{grid-column-end: -4;}
+.end_5{grid-column-end: -5;}
+.end_6{grid-column-end: -6;}
+.end_7{grid-column-end: -7;}
+.end_8{grid-column-end: -8;}
+.end_9{grid-column-end: -9;}
+.end_10{grid-column-end: -10;}
+.end_11{grid-column-end: -11;}
+.end_12{grid-column-end: -12;}
+
 .grid_mb_1{ grid-column: span 1; }
 .grid_mb_2{ grid-column: span 2; }
 .grid_mb_3{ grid-column: span 3; }
