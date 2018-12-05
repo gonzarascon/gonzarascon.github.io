@@ -49,6 +49,8 @@ ol,ul{
 .mr-0{margin-right: 0;}
 .mx-5{margin: 0 5rem;}
 .mx-2{margin: 0 2rem;}
+.my-5{margin: 5rem 0;}
+.my-2{margin: 2rem 0;}
 .mt-2{margin-top: 2rem;}
 .mt-5{margin-top: 5rem;}
 .mb-1{margin-bottom: 1rem;}
@@ -105,6 +107,7 @@ ol,ul{
 }
 
 .content-center{align-content: center;}
+.items-center{align-items:center;}
 .align-center{align-self: center !important;}
 .align-end{align-self: end !important;}
 .align-start{align-self: start !important;}

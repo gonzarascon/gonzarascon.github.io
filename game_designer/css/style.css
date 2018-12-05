@@ -1,3 +1,6 @@
+/*======== COLOR CLASSES  ========*/
+.grey{color:#707070;}
+
 /*======== MAIN SETTINGS  ========*/
 html{
 	scroll-behavior: smooth;
@@ -21,9 +24,12 @@ h1>img{
 	width: 90px;
 }
 .name{
+	color: #575e6c;
 	margin: auto 0;
-	font-weight: 300;
-	font-size: 1.35rem;
+	font-weight: normal;
+	font-size: 1.2rem;
+	border-left: 1.5px #5a6988 solid;
+	padding-left: 18px;
 }
 .medal{
 
@@ -42,7 +48,6 @@ h1>img{
 
 	/*======= FIRST SECTION SETTINGS  =======*/
 	h2{
-		height: 350px;
 		display: inline;
 		font-size: 7rem;
 		color: #707070;
@@ -54,15 +59,168 @@ h1>img{
 		width: 100px;
 		height: 100px;
 	}
+	.section-circle{
+		display: inline-block;
+		border-radius: 50%;
+		width: 76px;
+		height: 76px;
+		margin-right: 40px;
+	}
 
-	#work-button{
+	.work{
 		background-image: linear-gradient(#6F00FF, #B200FF);
 	}
 
-	#about-button{
+	.about{
 		background-image: linear-gradient(#FF6F00, #FFBB00);
 	}
 
-	#chat-button{
+	.chat{
 		background-image: linear-gradient(#FF00AA, #FF6F00);
+	}
+
+	/*====== SECTION HEADING SETTINGS  ======*/
+
+	.section-heading{
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	/*======== WORK SECTION SETTINGS  ========*/
+
+	/*----- Cards -----*/
+	.starred-card,.card{
+		background-color:#FAFAFA;
+		border-radius: 10px;
+		box-shadow: rgba(0,0,0,.2) 5px 5px 15px;
+	}
+	.starred-card .card-image{
+		max-height: 600px;
+	}
+	.card .card-image{
+		max-height: 215px;
+	}
+	.card-image{
+		text-align: center;
+		/* background-color:#ADADAD; || Background color for test */
+		border-radius: 10px 10px 0 0;
+	}
+
+	.card-image img{
+		width: 100%;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.card-info{
+		padding: 20px;
+		width: 100%;
+		font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+	}
+	.starred-card .card-title{margin-bottom: 20px;margin-top: 10px;}
+	.card-title{
+		color:#707070;
+		font-size: 2.25rem;
+		font-weight: 700;
+	}
+	.card-keyword{
+		font-weight: 600;
+		font-style: italic;
+		font-size: 1.75rem;
+		color:#707070;
+		margin-bottom: 20px;
+	}
+	.card-text{
+		font-weight: 300;
+		color: #707070;
+		font-size: 1.5rem;
+	}
+
+	/*----- More Works link -----*/
+
+	.more-works{
+		font-weight: bold;
+		color:#707070;
+		font-size: 2rem;
+	}
+
+	.more-works svg{
+		width: 25px;
+		margin-right: 5px;
+	}
+
+	/*======== ABOUT ME SECTION SETTINGS  ========*/
+
+	.my-photo{
+		padding: 10px;
+		text-align: center;
+		border-radius: 15px;
+		background-image: linear-gradient(#FF6F00, #FFBB00);
+	}
+
+	.my-photo img{
+		vertical-align: middle;
+		border-radius: 15px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/*----- Profile content settings -----*/
+	.profile-content{
+		font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+		color:#707070;
+	}
+
+	.profile-heading{
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	.profile-text{
+		font-size: 1.5rem;
+		font-weight: 300;
+		font-style: italic;
+	}
+
+	.level-bar{
+		display: block;
+		width: 100%;
+		height: 50px;
+		border-radius: 30px;
+		border: 3px solid #004AFF;
+		padding: 11px 0;
+	}
+
+	.level-bar::after{
+		content: "291 días para el siguiente nivel";
+		color:#B7B7B7;
+
+	}
+
+	.level-progress{
+		top: 0;
+		left: -1px;
+		width: 50px;
+		height: 100%;
+		border-radius: 30px 0 0 30px;
+		background-image: linear-gradient(#0479E8, #004AFF);
+		color: white;
+		text-align: center;
+		padding: 6px 0;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	.ability{
+		width:30%;
+		display: block;
+		height: 50px;
+		border-radius: 30px;
+		border: 3px solid #004AFF;
+		padding: 11px 0;
+		transition: all ease .3s;
+	}
+
+	.ability:hover{
+		background-image:linear-gradient(#0479E8, #004AFF);
+		color:white;
+		cursor: pointer;
 	}

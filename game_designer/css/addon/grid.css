@@ -26,6 +26,13 @@
 .end_11{grid-column-end: -11;}
 .end_12{grid-column-end: -12;}
 
+.row_1{grid-row: span 1;}
+.row_2{grid-row: span 2;}
+.row_3{grid-row: span 3;}
+.row_4{grid-row: span 4;}
+.row_5{grid-row: span 5;}
+.row_6{grid-row: span 6;}
+
 .grid_mb_1{ grid-column: span 1; }
 .grid_mb_2{ grid-column: span 2; }
 .grid_mb_3{ grid-column: span 3; }
