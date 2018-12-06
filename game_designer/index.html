@@ -59,17 +59,23 @@
 			<!-- Main section  -->
 			<section class="full-height grid_10 grid end_2">
 				<div class="grid_12 text-center py-5">
-					<h2 id="titles" class=""></h2>
+					<h2 id="titles" class="titles"></h2>
 				</div>
 				<div class="grid_6 end_4 flex space-between">
-					<a href="" id="work-button" class="main-button work"></a>
-					<a href="" id="about-button" class="main-button about"></a>
-					<a href="" id="chat-button" class="main-button chat"></a>
+					<a href="" id="work-button" class="main-button work text-center">
+						<img src="assets/img/game-file.png" alt="Trabajos">
+					</a>
+					<a href="" id="about-button" class="main-button about text-center">
+						<img src="assets/img/heart-profile.png" alt="Sobre Mi">
+					</a>
+					<a href="" id="chat-button" class="main-button chat text-center">
+						<img src="assets/img/dialog-bubble.png" alt="Charlemos">
+					</a>
 				</div>
 			</section>
 			<!-- Works section  -->
 			<section class="grid_10 grid end_2 grid">
-				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle work"></span> Trabajos</h3>
+				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle work text-center">	<img src="assets/img/game-file.png" alt="Trabajos"></span> Trabajos</h3>
 
 					<div class="starred-card grid_6 end_7 row_2">
 						<figure class="card-image overflow-hidden">
@@ -118,7 +124,7 @@
 			</section>
 			<!-- About me section  -->
 			<section class="grid_10 grid end_2 grid">
-				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle about"></span> Sobre mi</h3>
+				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle about text-center"><img src="assets/img/heart-profile.png" alt="Sobre Mi"></span> Sobre mi</h3>
 
 				<figure class="my-photo grid_4 end_9 mt-2">
 					<img src="assets/img/my-photo.jpg" alt="Gonzalo Rascón">
@@ -151,14 +157,32 @@
 				</div>
 			</section>
 			<!-- Let's talk section  -->
-			<section class="grid_10 grid end_2 grid mt-5">
-				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle chat"></span> Charlemos</h3>
-				<figure class="contact-lock grid_2 end_8"></figure>
-				<span class="hidden-message grid_10 end_2">Para desbloquear mi email, asegúrate de haber visto al menos 5 de mis trabajos!</span>
+			<section class="grid_10 grid end_2 grid mt-5 lets-talk">
+				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle chat text-center"><img src="assets/img/dialog-bubble.png" alt="Charlemos"></span> Charlemos</h3>
+				<figure class="contact-lock grid_2 end_6 text-center">
+					<img src="assets/img/lock.png" alt="Mail Bloqueado">
+				</figure>
+				<span class="hidden-message grid_6 end_4 white block text-center">Para desbloquear mi email, asegúrate de haber visto al menos 5 de mis trabajos!</span>
+				<a href="mailto:gonzarascon@gmail.com" class="grid_6 end_4 text-center mail black none">gonzarascon@gmail.com</a>
+				<a href="#" id="skip-medal" class="gray-link grid_4 end_5 text-center grey">O podes saltearte la diversión haciendo click acá.</a>
 			</section>
 		</main>
 
 			<footer class="grid grid_10 end_2">
+				<div class="grid_4 end_5 pt-5">
+					<h2 class="text-center">
+						<img src="assets/img/logo.png" alt="Gonzalo Rascón">
+					</h2>
+					<span class="name text-center block ">
+						<strong>Gonzalo Rascón</strong> — Game Designer
+					</span>
+				</div>
+
+				<div class="grid_2 end_6 flex space-between text-center social-media pb-5">
+					<a href="https://www.linkedin.com/in/gonzarascon"><img src="assets/img/linkedin.png" alt="Agregame a tus contactos en Linkedin!"></a>
+					<a href="https://www.twitter.com/gonza_rascon"><img src="assets/img/twitter.png" alt="Seguime en Twitter!"></a>
+				</div>
+
 			</footer>
 			<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"

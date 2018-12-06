@@ -121,7 +121,7 @@ ol,ul{
 	align-self: center;
 }
 .space-between{justify-content: space-between;}
-
+.space-evenly{justify-content: space-evenly;}
 .bg-image{
 	background-size: cover !important;
 	background-repeat: no-repeat !important;
