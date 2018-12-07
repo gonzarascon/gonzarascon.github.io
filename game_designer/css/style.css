@@ -52,7 +52,7 @@ header,main,footer{width: 100%; padding: 20px;}
 }
 
 .badge.unachieved{
-	background-color: #757472;
+	background-color: rgba(0, 0, 0, 0.07);
 }
 /*======= HEADER SETTINGS  =======*/
 h1>img{
@@ -276,7 +276,9 @@ h1>img{
 		font-size: 1.25rem;
 		font-weight: bold;
 	}
-
+	#skip-medal:hover{
+		cursor: pointer;
+	}
 	.mail{
 		font-size: 2rem;
 		font-weight: 800;
@@ -297,4 +299,46 @@ footer .name{
 /*========= WORKS.HTML SETTINGS =========*/
 .grid_6 .card-image{
 	max-height: 500px;
+}
+
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:768px){
+
+}
+@media screen and (max-width:480px){
+
+	.medal{
+		right: 0;
+		bottom: 0;
+		top: unset;
+		left: unset;
+	}
+	.badge-container{
+		flex-wrap: wrap;
+		padding: 20px 0;
+	}
+	.badge-container .badge{
+		margin: 20px 0;
+	}
+	.titles{
+		font-size: 2.25rem;
+	}
+	.typed-cursor{
+		font-size: 2.25rem;
+	}
+
+	.level-progress{
+		top:-0.5px;
+	}
+	.abilities{
+		flex-wrap: wrap;
+	}
+	.ability{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.mail{font-size: 1.5rem;}
+
 }

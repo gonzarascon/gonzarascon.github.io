@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="fonts/cereal.css">
 		<link rel="stylesheet" href="css/addon/grid.css">
 		<link rel="stylesheet" href="css/addon/utility.css">
+		<link rel="stylesheet" href="css/lib/loading-bar.css">
 		<link rel="stylesheet" href="css/lib/tooltipster.bundle.min.css">
 		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css">
 		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir-customized.css">
@@ -49,21 +50,21 @@
 			<!-- End of medal svg  -->
 		</a>
 		<div id="medal-container" class="medal-field fixed text-center grid none">
-			<div class="badge-container grid_10 end_2 flex space-between">
-				<div class="badge unachieved tooltip tooltip_group" title="¡Revisaste 5 de mis trabajos!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Revisaste todos mis trabajos!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Viste mi perfil!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Nos pusimos en contacto!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Abriste una red social!"></div>
+			<div class="badge-container grid_10 grid_mb_10 end_mb_2 end_2 flex space-between">
+				<div id="fiveSeen" class="badge unachieved tooltip tooltip_group ldBar" title="¡Revisaste 5 de mis trabajos!"></div>
+				<div id="allSeen" class="badge unachieved tooltip tooltip_group" title="¡Revisaste todos mis trabajos!"></div>
+				<div id="profileSeen" class="badge unachieved tooltip tooltip_group" title="¡Viste mi perfil!"></div>
+				<div id="chatted" class="badge unachieved tooltip tooltip_group" title="¡Nos pusimos en contacto!"></div>
+				<div id="shared" class="badge unachieved tooltip tooltip_group" title="¡Abriste una red social!"></div>
 			</div>
 			<a href="#" id="close-medal" class="grid_2 end_6"><img src="assets/img/close-arrow.png" alt="Cerrar Medallero"></a>
 		</div>
 		<header class="grid py-2">
 
-				<h1 class="grid_1 end_11 align-center">
+				<h1 class="grid_1 grid_mb_4 end_11 end_mb_8 align-center">
 					<img src="assets/img/logo.png" alt="Joystick">
 				</h1>
-				<span class="name grid_3 end_8 align-center">
+				<span class="name grid_3 grid_mb_6 end_8 align-center">
 					<strong>Gonzalo Rascón </strong>
 					<br />
 					Game Designer
@@ -118,7 +119,7 @@
 						</div>
 					</div>
 
-					<a href="#" class="grid_4 end_5 more-works my-5 text-center">
+					<a href="works.html" class="grid_4 end_5 more-works my-5 text-center">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.72 37.72">
 						  <defs>
 						    <style>
@@ -160,7 +161,7 @@
 					</div>
 					<div class="grid_12">
 						<h5 class="profile-heading">Habilidades</h5>
-						<div class="flex space-between">
+						<div class="flex space-between abilities">
 							<span class="ability text-center">Ideas Únicas</span>
 							<span class="ability text-center">Pasión</span>
 							<span class="ability text-center">Dedicación</span>
@@ -192,7 +193,7 @@
 					</span>
 				</div>
 
-				<div class="grid_2 end_6 flex space-between text-center social-media pb-5">
+				<div class="grid_2 end_6 grid_mb_8 end_mb_3 flex space-between text-center social-media pb-5">
 					<a href="https://www.linkedin.com/in/gonzarascon"><img src="assets/img/linkedin.png" alt="Agregame a tus contactos en Linkedin!"></a>
 					<a href="https://www.twitter.com/gonza_rascon"><img src="assets/img/twitter.png" alt="Seguime en Twitter!"></a>
 				</div>
@@ -202,6 +203,8 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/lib/loading-bar.js"></script>
+	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/lib/tooltipster.bundle.min.js"></script>
 	<script type="text/javascript" src="js/lib/tooltipster-discovery.min.js"></script>
 	<script type="text/javascript" src="js/lib/typed.min.js"></script>
