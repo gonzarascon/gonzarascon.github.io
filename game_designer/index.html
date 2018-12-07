@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="fonts/cereal.css">
 		<link rel="stylesheet" href="css/addon/grid.css">
 		<link rel="stylesheet" href="css/addon/utility.css">
+		<link rel="stylesheet" href="css/lib/tooltipster.bundle.min.css">
+		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css">
+		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir-customized.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -47,11 +50,11 @@
 		</a>
 		<div id="medal-container" class="medal-field fixed text-center grid none">
 			<div class="badge-container grid_10 end_2 flex space-between">
-				<div class="badge unachieved"></div>
-				<div class="badge unachieved"></div>
-				<div class="badge unachieved"></div>
-				<div class="badge unachieved"></div>
-				<div class="badge unachieved"></div>
+				<div class="badge unachieved tooltip tooltip_group" title="¡Revisaste 5 de mis trabajos!"></div>
+				<div class="badge unachieved tooltip tooltip_group" title="¡Revisaste todos mis trabajos!"></div>
+				<div class="badge unachieved tooltip tooltip_group" title="¡Viste mi perfil!"></div>
+				<div class="badge unachieved tooltip tooltip_group" title="¡Nos pusimos en contacto!"></div>
+				<div class="badge unachieved tooltip tooltip_group" title="¡Abriste una red social!"></div>
 			</div>
 			<a href="#" id="close-medal" class="grid_2 end_6"><img src="assets/img/close-arrow.png" alt="Cerrar Medallero"></a>
 		</div>
@@ -173,9 +176,9 @@
 				<figure class="contact-lock grid_2 end_6 text-center">
 					<img src="assets/img/lock.png" alt="Mail Bloqueado">
 				</figure>
-				<span class="hidden-message grid_6 end_4 white block text-center">Para desbloquear mi email, asegúrate de haber visto al menos 5 de mis trabajos!</span>
-				<a href="mailto:gonzarascon@gmail.com" class="grid_6 end_4 text-center mail black none">gonzarascon@gmail.com</a>
-				<a href="#" id="skip-medal" class="gray-link grid_4 end_5 text-center grey">O podes saltearte la diversión haciendo click acá.</a>
+				<span id="emailLocker" class="hidden-message grid_6 end_4 white block text-center">Para desbloquear mi email, asegúrate de haber visto al menos 5 de mis trabajos!</span>
+				<a id="email" href="mailto:gonzarascon@gmail.com" class="grid_6 end_4 text-center mail black none">gonzarascon@gmail.com</a>
+				<a id="skip-medal" class="gray-link grid_4 end_5 text-center grey">O podes saltearte la diversión haciendo click acá.</a>
 			</section>
 		</main>
 
@@ -199,6 +202,8 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/lib/tooltipster.bundle.min.js"></script>
+	<script type="text/javascript" src="js/lib/tooltipster-discovery.min.js"></script>
 	<script type="text/javascript" src="js/lib/typed.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	</body>

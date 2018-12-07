@@ -1,0 +1,30 @@
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-box {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: rgba(255,255,255,0);
+	border-bottom: 3px solid black;
+}
+
+
+
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-content {
+	color: #707070;
+	padding: 8px;
+}
+
+/* Tooltip arrow */
+.tooltipster-sidetip.tooltipster-noir.tooltipster-noir-customized .tooltipster-arrow-background{border:11px solid transparent;}
+.tooltipster-arrow-background{
+	border-bottom-color:#FEFAFA;
+	border-width: 3px;
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-left .tooltipster-arrow-background{
+	border-left-color:#FEFAFA;
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-right .tooltipster-arrow-background{
+	border-right-color:#FEFAFA;
+}
+.tooltipster-sidetip.tooltipster-noir.tooltipster-top .tooltipster-arrow-background{
+	border-top-color:#FEFAFA;
+}

@@ -29,6 +29,73 @@ $(document).ready(function() {
 		medalModal.slideUp('300');
 	});
 
+		// Tooltips for medals
+		$('.tooltip').tooltipster({
+			theme:['tooltipster-noir', 'tooltipster-noir-customized'],
+			animation: 'grow'
+		});
 
+		// Tweak for Tooltipster Discovery
+		$.tooltipster.on('start', function(event) {
+
+    if ($(event.instance.elementOrigin()).hasClass('tooltip_group')) {
+
+        var instances = $.tooltipster.instances('.tooltip_group'),
+            open = false,
+            duration;
+
+        $.each(instances, function (i, instance) {
+
+            if (instance !== event.instance) {
+
+                // if another instance is already open
+                if (instance.status().open){
+
+                    open = true;
+
+                    // get the current animationDuration
+                    duration = instance.option('animationDuration');
+
+                    // close the tooltip without animation
+                    instance.option('animationDuration', 0);
+                    instance.close();
+
+                    // restore the animationDuration to its normal value
+                    instance.option('animationDuration', duration);
+                }
+            }
+        });
+
+        // if another instance was open
+        if (open) {
+
+            duration = event.instance.option('animationDuration');
+
+            // open the tooltip without animation
+            event.instance.option('animationDuration', 0);
+            event.instance.open();
+
+            // restore the animationDuration to its normal value
+            event.instance.option('animationDuration', duration);
+
+            // now that we have opened the tooltip, the hover trigger must be stopped
+            event.stop();
+        }
+	    }
+			});
+
+// ================ CONTACT SECTION SETTINGS
+
+			let skipMedal = $('#skip-medal');
+			let emailLocker = $('#emailLocker');
+			let email = $('#email');
+
+			skipMedal.on('click', function(event) {
+				event.preventDefault();
+				/* Act on the event */
+				emailLocker.fadeOut('300', function() {
+					email.fadeIn('300');
+				});
+			});
 
 });
