@@ -305,16 +305,20 @@ footer .name{
 
 }
 @media screen and (max-width:768px){
-
-}
-@media screen and (max-width:480px){
-
 	.medal{
 		right: 0;
 		bottom: 0;
 		top: unset;
 		left: unset;
 	}
+	.titles{
+		font-size: 4.25rem;
+	}
+
+}
+@media screen and (max-width:480px){
+
+
 	.badge-container{
 		flex-wrap: wrap;
 		padding: 20px 0;
