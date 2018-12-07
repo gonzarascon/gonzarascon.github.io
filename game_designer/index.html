@@ -11,7 +11,8 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<a id="medal" class="medal fixed text-center">
+		<a id="medal" href="#" class="medal fixed text-center">
+
 			<!-- Medal svg  -->
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 130.183 130.183">
 				<defs>
@@ -44,6 +45,16 @@
 			</svg>
 			<!-- End of medal svg  -->
 		</a>
+		<div id="medal-container" class="medal-field fixed text-center grid none">
+			<div class="badge-container grid_10 end_2 flex space-between">
+				<div class="badge unachieved"></div>
+				<div class="badge unachieved"></div>
+				<div class="badge unachieved"></div>
+				<div class="badge unachieved"></div>
+				<div class="badge unachieved"></div>
+			</div>
+			<a href="#" id="close-medal" class="grid_2 end_6"><img src="assets/img/close-arrow.png" alt="Cerrar Medallero"></a>
+		</div>
 		<header class="grid py-2">
 
 				<h1 class="grid_1 end_11 align-center">
@@ -62,19 +73,19 @@
 					<h2 id="titles" class="titles"></h2>
 				</div>
 				<div class="grid_6 end_4 flex space-between">
-					<a href="" id="work-button" class="main-button work text-center">
+					<a id="work-button" href="#work" class="main-button work text-center">
 						<img src="assets/img/game-file.png" alt="Trabajos">
 					</a>
-					<a href="" id="about-button" class="main-button about text-center">
+					<a id="about-button" href="#about" class="main-button about text-center">
 						<img src="assets/img/heart-profile.png" alt="Sobre Mi">
 					</a>
-					<a href="" id="chat-button" class="main-button chat text-center">
+					<a id="chat-button"  href="#chat" class="main-button chat text-center">
 						<img src="assets/img/dialog-bubble.png" alt="Charlemos">
 					</a>
 				</div>
 			</section>
 			<!-- Works section  -->
-			<section class="grid_10 grid end_2 grid">
+			<section class="grid_10 grid end_2 grid" id="work">
 				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle work text-center">	<img src="assets/img/game-file.png" alt="Trabajos"></span> Trabajos</h3>
 
 					<div class="starred-card grid_6 end_7 row_2">
@@ -123,7 +134,7 @@
 					</a>
 			</section>
 			<!-- About me section  -->
-			<section class="grid_10 grid end_2 grid">
+			<section class="grid_10 grid end_2 grid" id="about">
 				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle about text-center"><img src="assets/img/heart-profile.png" alt="Sobre Mi"></span> Sobre mi</h3>
 
 				<figure class="my-photo grid_4 end_9 mt-2">
@@ -157,7 +168,7 @@
 				</div>
 			</section>
 			<!-- Let's talk section  -->
-			<section class="grid_10 grid end_2 grid mt-5 lets-talk">
+			<section class="grid_10 grid end_2 grid mt-5 lets-talk" id="chat">
 				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle chat text-center"><img src="assets/img/dialog-bubble.png" alt="Charlemos"></span> Charlemos</h3>
 				<figure class="contact-lock grid_2 end_6 text-center">
 					<img src="assets/img/lock.png" alt="Mail Bloqueado">
