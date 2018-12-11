@@ -28,6 +28,23 @@ header,main,footer{width: 100%; padding: 20px;}
 	margin: auto;
 	z-index: 9999999;
 }
+.medal.notification{
+	animation: bounce 1.5s infinite alternate;
+}
+
+.medal.notification .medal-1{
+	fill: url(#medal-gradient);
+}
+
+@keyframes bounce {
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.1);
+	}
+}
+
 .medal-field{
 	top: 0;
 	left: 0;

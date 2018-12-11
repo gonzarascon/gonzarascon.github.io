@@ -34,37 +34,37 @@ var shared = new ldBar('#shared',{
 	"max": "100"
 });
 
-$('#fiveSeen').on('click', function(event) {
-	event.preventDefault();
-	for (var i = 0; i < 101; i++) {
-		fiveSeen.set(i);
-	}
-});
+// $('#fiveSeen').on('click', function(event) {
+// 	event.preventDefault();
+// 	for (var i = 0; i < 101; i++) {
+// 		fiveSeen.set(i);
+// 	}
+// });
 
-$('#allSeen').on('click', function(event) {
-	event.preventDefault();
-	for (var i = 0; i < 101; i++) {
-		allSeen.set(i);
-	}
-});
+// $('#allSeen').on('click', function(event) {
+// 	event.preventDefault();
+// 	for (var i = 0; i < 101; i++) {
+// 		allSeen.set(i);
+// 	}
+// });
 
-$('#profileSeen').on('click', function(event) {
-	event.preventDefault();
-	for (var i = 0; i < 101; i++) {
-		profileSeen.set(i);
-	}
-});
+// $('#profileSeen').on('click', function(event) {
+// 	event.preventDefault();
+// 	for (var i = 0; i < 101; i++) {
+// 		profileSeen.set(i);
+// 	}
+// });
 
-$('#chatted').on('click', function(event) {
-	event.preventDefault();
-	for (var i = 0; i < 101; i++) {
-		chatted.set(i);
-	}
-});
+// $('#chatted').on('click', function(event) {
+// 	event.preventDefault();
+// 	for (var i = 0; i < 101; i++) {
+// 		chatted.set(i);
+// 	}
+// });
 
-$('#shared').on('click', function(event) {
-	event.preventDefault();
-	for (var i = 0; i < 101; i++) {
-		shared.set(i);
-	}
-});
+// $('#shared').on('click', function(event) {
+// 	event.preventDefault();
+// 	for (var i = 0; i < 101; i++) {
+// 		shared.set(i);
+// 	}
+// });

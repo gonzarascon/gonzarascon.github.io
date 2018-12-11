@@ -10,6 +10,9 @@ $(document).ready(function() {
 		if (medalModal.is(':visible')) {
 			medalModal.slideUp('300');
 		} else{
+			if(medalButton.hasClass('notification')){
+				medalButton.removeClass('notification');
+			}
 			medalModal.slideDown('300').css('display', 'grid');
 		}
 	});
@@ -86,6 +89,11 @@ $(document).ready(function() {
 				emailLocker.fadeOut('300', function() {
 					email.fadeIn('300');
 				});
+			});
+
+			email.on('click', function(event) {
+				event.preventDefault();
+				chatted.set(100);
 			});
 
 });
