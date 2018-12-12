@@ -16,7 +16,7 @@ $(document).ready(function() {
 	});
 
 	// =================== JSON DATA SETTINGS
-	$.getJSON('json/projects.jsoncallback=?', function(json) {
+	$.getJSON('json/projects.json', function(json) {
 			/*optional stuff to do after success */
 			console.log(json);
 	});
