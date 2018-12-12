@@ -1,3 +1,8 @@
+let projectName = [];
+let projectKeywords = [];
+let projectDescription = [];
+let projectImages = [];
+
 $(document).ready(function() {
 	// =================== WORK MODAL SETINGS
 	let closeModal = $('.close-modal');
@@ -16,10 +21,7 @@ $(document).ready(function() {
 	});
 
 	// =================== JSON DATA SETTINGS
-	let projectName = [];
-	let projectKeywords = [];
-	let projectDescription = [];
-	let projectImages = [];
+
 	$.getJSON('json/projects.json', function(project) {
 			/*optional stuff to do after success */
 
@@ -125,6 +127,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		/* Act on the event */
 		if(workModal.not(':visible')){
+			let workNumber = $(this).attr('data-work');
+			loadModalData(workNumber);
 			workModal.fadeIn('300').css('display', 'grid');
 		}
 		if ($(this).attr('data-opened') == 'false') {
@@ -215,4 +219,23 @@ function isScrolledIntoView(elem)
     var elemBottom = elemTop + $(elem).height();
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+// For activating Modal with JSON data in it
+
+function loadModalData(workN){
+	$('#work-slider').slick('unslick');
+	$('.modal-image').remove();
+	$('.slick-cloned').remove();
+	console.log(projectImages[workN]);
+	let imgs = projectImages[workN];
+	$.each(imgs, function(index, el) {
+
+		$('#work-slider').append('<img src=' + el + ' alt=' + projectName[workN] + ' class="modal-image" >');
+	});
+
+	$('#work-slider').slick({
+		dots: false,
+	});
+
 }
