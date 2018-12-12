@@ -72,6 +72,46 @@ header,main,footer{width: 100%; padding: 20px;}
 	background-color: rgba(0, 0, 0, 0.07);
 }
 
+#close-medal img{
+	width: 50px;
+}
+/*======= BADGES LABELS =======*/
+#fiveSeen::after{
+content:"Visitante Curioso";
+font-size: .75rem;
+text-align:center;
+color:#767676;
+font-weight: bold;
+}
+#allSeen::after{
+content:"El Omnipresente";
+font-size: .75rem;
+text-align:center;
+color:#767676;
+font-weight: bold;
+}
+#profileSeen::after{
+content:"¡Que Bueno conocerte!";
+font-size: .75rem;
+text-align:center;
+color:#767676;
+font-weight: bold;
+}
+#chatted::after{
+content:"Un poco de esto...";
+font-size: .75rem;
+text-align:center;
+color:#767676;
+font-weight: bold;
+}
+#shared::after{
+content:"Comparte el amor";
+font-size: .75rem;
+text-align:center;
+color:#767676;
+font-weight: bold;
+}
+
 /*======= WORK MODAL  =======*/
 .work-modal{
 	top: 0;left: 0;right: 0;bottom:0;/* Absolute center */
@@ -377,14 +417,32 @@ footer .name{
 
 }
 @media screen and (max-width:480px){
+	.work-modal{
+		margin: auto 20px;
+	}
+	.work-modal .grid_7{
+		overflow: scroll;
+	}
 
+	.work-modal .card-title, .work-modal .card-text, .work-modal .card-keyword{
+		padding: 0 20px;
+	}
 
+	.work-modal figure{
+		height: 350px;
+		border-radius: 25px 25px 0 0;
+	}
+
+	#close-medal img{
+		margin: 20px auto;
+	}
 	.badge-container{
 		flex-wrap: wrap;
 		padding: 20px 0;
+		overflow: scroll;
 	}
 	.badge-container .badge{
-		margin: 20px 0;
+		margin: 50px 0;
 	}
 	.titles{
 		font-size: 2.25rem;

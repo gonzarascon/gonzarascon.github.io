@@ -14,7 +14,7 @@
 		"name": "mini-dojo",
 		"projectName": "Mini Dojo",
 		"keywords":"#StudyProject #OnlineGame",
-		"projectDescription": "<strong>Mini Dojo</strong> es un videojuego creado e ideado en la materia \" Videojuegos I \"  de la <a href=\"https://multimedia.maimonides.edu\" target=\"_blank\">Carrera de Diseño Multimedia en la Universidad Maimónides</a>. El mismo fue realizado en tiempo récord con tan solo 8 horas para la programación y diseño del mismo.  <br /> <strong>Mini Dojo</strong> se desarrollo en Construct 3",
+		"projectDescription": "<strong>Mini Dojo</strong> es un videojuego creado e ideado en la materia \" Videojuegos I \"  de la <a href=\"https://multimedia.maimonides.edu\" target=\"_blank\" style=\"display:inline;\">Carrera de Diseño Multimedia en la Universidad Maimónides</a>. El mismo fue realizado en tiempo récord, con tan solo 8 horas para la programación y diseño del mismo.  <br /> <strong>Mini Dojo</strong> se desarrollo en Construct 3",
 		"image1": "assets/minidojo/minidojo_logo.png",
 		"image2": "assets/minidojo/screen.png",
 		"image3": "assets/minidojo/player_1.gif"
@@ -43,8 +43,8 @@
 		"keywords":"#WebDevelopment #LandingPage",
 		"projectDescription": "<strong>La Fundación de Estudios para la Salud y Seguridad Social</strong> realizó 1° de Noviembre de 2018 las 7mas Jornadas sobre reponsabilidad social en salud y medioambiente.<br/> El desarrollo de la landing page para el evento fue realizado sobre WordPress y en base a un diseño específico, se maquetó la misma.",
 		"image1": "assets/fess/home.png",
-		"image2": "assets/carneaunclick/gallery.png",
-		"image3": "assets/carneaunclick/product.png"
+		"image2": "assets/fess/gallery.png",
+		"image3": "assets/fess/product.png"
 	}
 
 ]

@@ -238,4 +238,9 @@ function loadModalData(workN){
 		dots: false,
 	});
 
+	$('#work-title').html(projectName[workN]);
+	$('#work-keyword').html(projectKeywords[workN]);
+	$('#work-desc').html(projectDescription[workN]);
+
+
 }
