@@ -15,6 +15,12 @@ $(document).ready(function() {
 		}
 	});
 
+	// =================== JSON DATA SETTINGS
+	$.getJSON('json/projects.jsoncallback=?', function(json) {
+			/*optional stuff to do after success */
+			console.log(json);
+	});
+
 	// =================== MEDAL CASE SETTINGS
 	let medalButton = $('#medal');
 	let medalModal = $('#medal-container');
@@ -103,10 +109,10 @@ $(document).ready(function() {
 	cardTitle.on('click', function(event) {
 		event.preventDefault();
 		/* Act on the event */
+		if(workModal.not(':visible')){
+			workModal.fadeIn('300').css('display', 'grid');
+		}
 		if ($(this).attr('data-opened') == 'false') {
-			if(workModal.not(':visible')){
-				workModal.fadeIn('300').css('display', 'grid');
-			}
 			$(this).attr('data-opened','true');
 			game.checkedWorks();
 		}

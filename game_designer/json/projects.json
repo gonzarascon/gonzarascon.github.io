@@ -1,0 +1,14 @@
+[
+	{
+		"name": "dobu",
+		"project-name": "Dobu: The Untold Story",
+		"keywords":"#WorkInProgress #PCGaming",
+		"project-description": "<strong>Dobu: The Untold Story</strong>, es un videojuego que combina las categorías RPG y Roguelike, ambientado en el Japón Medieval. <br /><strong>Desarrollado en Unity</strong>, el juego incorpora una mezcla de mecánicas arraigadas en los géneros RPG y Roguelike como la generación procedural de escenarios, el equipamiento de objetos, entre otros. <br />Actualmente el juego se encuentra en estado de desarrollo y <strong>se planea una futura versión Early Access</strong> dentro del 2019.",
+		"image1": "assets/dobu/dobu_logo.jpg",
+		"image2": "assets/dobu/sprites.png",
+		"image3": "assets/dobu/tile_sheet.png"
+
+
+	}
+
+	]
