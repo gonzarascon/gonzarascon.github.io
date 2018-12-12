@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	// =================== WORK MODAL SETINGS
+	let closeModal = $('.close-modal');
+	let workModal = $('#work-modal');
+
+	$('#work-slider').slick({
+		dots: false,
+	});
+
+	closeModal.on('click' function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		if()
+	});
 
 	// =================== MEDAL CASE SETTINGS
 	let medalButton = $('#medal');

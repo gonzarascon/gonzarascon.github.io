@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="css/lib/tooltipster.bundle.min.css">
 		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css">
 		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir-customized.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -22,7 +24,7 @@
 				<defs>
 					<style>
 						.medal-1 {
-							fill: rgba(0,0,0,.5);
+							fill: #676767;
 						}
 
 						.medal-2 {
@@ -58,6 +60,31 @@
 				<div id="shared" class="badge unachieved tooltip tooltip_group" title="¡Abriste una red social!"></div>
 			</div>
 			<a href="#" id="close-medal" class="grid_2 end_6"><img src="assets/img/close-arrow.png" alt="Cerrar Medallero"></a>
+		</div>
+		<div id="work-modal" class="fixed grid work-modal">
+
+			<figure class="grid_5 overflow-hidden relative">
+				<div class="absolute">
+					<div id="work-slider">
+						<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
+						<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
+						<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
+					</div>
+				</div>
+
+			</figure>
+			<div class="grid_7">
+				<a href="" class="close-modal text-right">X</a>
+				<h3 class="card-title">Título del juego</h3>
+				<p class="card-keyword">#WorkInProgress #PCGaming</p>
+				<p class="card-text">
+					<strong>Dobu: The Untold Story</strong>, es un videojuego que combina las categorías RPG y Roguelike, ambientado en el Japón Medieval. <br />
+					<strong>Desarrollado en Unity</strong>, el juego incorpora una mezcla de mecánicas arraigadas en los géneros RPG y Roguelike como la generación procedural de escenarios, el equipamiento de objetos, entre otros. <br />
+					Actualmente el juego se encuentra en estado de desarrollo y <strong>se planea una futura versión Early Access</strong> dentro del 2019.
+
+
+				</p>
+			</div>
 		</div>
 		<header class="grid py-2">
 
@@ -209,6 +236,7 @@
 	<script type="text/javascript" src="js/lib/tooltipster-discovery.min.js"></script>
 	<script type="text/javascript" src="js/lib/typed.min.js"></script>
 	<script type="text/javascript" src="js/typing-title.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/gameSystem.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	</body>
