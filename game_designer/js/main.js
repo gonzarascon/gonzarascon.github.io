@@ -104,6 +104,9 @@ $(document).ready(function() {
 		event.preventDefault();
 		/* Act on the event */
 		if ($(this).attr('data-opened') == 'false') {
+			if(workModal.not(':visible')){
+				workModal.fadeIn('300').css('display', 'grid');
+			}
 			$(this).attr('data-opened','true');
 			game.checkedWorks();
 		}
@@ -111,14 +114,17 @@ $(document).ready(function() {
 	});
 // ================ PROFILE SECTION SETTINGS
 	let profile = $('#about');
-	$(document).on('scroll', function(event) {
-		event.preventDefault();
-		if (isScrolledIntoView(profile)) {
-			if(viewedProfile == false){game.checkProfile();}
-			viewedProfile = true;
-			game.updateBadges();
-		}
-	});
+	if(profile.length != 0){
+		$(document).on('scroll', function(event) {
+			event.preventDefault();
+			if (isScrolledIntoView(profile)) {
+				if(viewedProfile == false){game.checkProfile();}
+				viewedProfile = true;
+				game.updateBadges();
+			}
+		});
+	}
+
 // ================ CONTACT SECTION SETTINGS
 
 			let skipMedal = $('#skip-medal');
@@ -154,6 +160,26 @@ $(document).ready(function() {
 				viewedSm = true;
 				game.updateBadges();
 			});
+
+// ============== WORK PAGE SETTINGS
+
+let allTheWorks = $('.works');
+let worksViews = allTheWorks.find('.card-title');
+
+if (allTheWorks.length != 0 ) {
+	worksViews.on('click', function(event) {
+		event.preventDefault();
+		if (viewedWorks == allTheWorks.length) {
+			if(viewedAll == false){
+				game.badgeNotification();
+			}
+			viewedAll = true;
+			game.updateBadges();
+
+		}
+	});
+}
+
 
 });
 

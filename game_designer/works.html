@@ -8,9 +8,12 @@
 		<link rel="stylesheet" href="fonts/cereal.css">
 		<link rel="stylesheet" href="css/addon/grid.css">
 		<link rel="stylesheet" href="css/addon/utility.css">
+		<link rel="stylesheet" href="css/lib/loading-bar.css">
 		<link rel="stylesheet" href="css/lib/tooltipster.bundle.min.css">
 		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css">
 		<link rel="stylesheet" href="css/lib/tooltipster/sideTip/themes/tooltipster-sideTip-noir-customized.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -21,7 +24,7 @@
 				<defs>
 					<style>
 						.medal-1 {
-							fill: url(#medal-gradient);
+							fill: #676767;
 						}
 
 						.medal-2 {
@@ -49,20 +52,46 @@
 			<!-- End of medal svg  -->
 		</a>
 		<div id="medal-container" class="medal-field fixed text-center grid none">
-			<div class="badge-container grid_10 end_2 flex space-between">
-				<div class="badge unachieved tooltip tooltip_group" title="¡Revisaste 5 de mis trabajos!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Revisaste todos mis trabajos!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Viste mi perfil!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Nos pusimos en contacto!"></div>
-				<div class="badge unachieved tooltip tooltip_group" title="¡Abriste una red social!"></div>
+			<div class="badge-container grid_10 grid_mb_10 end_mb_2 end_2 flex space-between">
+				<div id="fiveSeen" class="badge unachieved tooltip tooltip_group ldBar" title="¡Revisaste 5 de mis trabajos!"></div>
+				<div id="allSeen" class="badge unachieved tooltip tooltip_group" title="¡Revisaste todos mis trabajos!"></div>
+				<div id="profileSeen" class="badge unachieved tooltip tooltip_group" title="¡Viste mi perfil!"></div>
+				<div id="chatted" class="badge unachieved tooltip tooltip_group" title="¡Nos pusimos en contacto!"></div>
+				<div id="shared" class="badge unachieved tooltip tooltip_group" title="¡Abriste una red social!"></div>
 			</div>
 			<a href="#" id="close-medal" class="grid_2 end_6"><img src="assets/img/close-arrow.png" alt="Cerrar Medallero"></a>
 		</div>
-		<header class="grid py-2">
+		<div id="work-modal" class="fixed grid work-modal none">
 
-				<h1 class="grid_1 end_11 align-center">
-					<img src="assets/img/logo.png" alt="Joystick">
-				</h1>
+			<figure class="grid_5 overflow-hidden relative">
+				<div class="absolute">
+					<div id="work-slider">
+						<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
+						<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
+						<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
+					</div>
+				</div>
+
+			</figure>
+			<div class="grid_7">
+				<a href="" class="close-modal text-right">X</a>
+				<h3 class="card-title">Título del juego</h3>
+				<p class="card-keyword">#WorkInProgress #PCGaming</p>
+				<p class="card-text">
+					<strong>Dobu: The Untold Story</strong>, es un videojuego que combina las categorías RPG y Roguelike, ambientado en el Japón Medieval. <br />
+					<strong>Desarrollado en Unity</strong>, el juego incorpora una mezcla de mecánicas arraigadas en los géneros RPG y Roguelike como la generación procedural de escenarios, el equipamiento de objetos, entre otros. <br />
+					Actualmente el juego se encuentra en estado de desarrollo y <strong>se planea una futura versión Early Access</strong> dentro del 2019.
+
+
+				</p>
+			</div>
+		</div>
+		<header class="grid py-2">
+				<a href="index.html" class="grid_1 end_11 align-center">
+					<h1 class="grid_1 end_11 align-center">
+						<img src="assets/img/logo.png" alt="Joystick">
+					</h1>
+				</a>
 				<span class="name grid_3 end_8 align-center">
 					<strong>Gonzalo Rascón </strong>
 					<br />
@@ -74,7 +103,7 @@
 			<section class="grid_10 grid end_2 grid" id="work">
 				<h3 class="section-heading grid_4 grey flex items-center"><span class="section-circle work text-center">	<img src="assets/img/game-file.png" alt="Trabajos"></span> Trabajos</h3>
 
-					<div class="starred-card grid_6 end_7 row_2">
+					<div class="starred-card grid_6 end_7 row_2 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -84,7 +113,7 @@
 							<p class="card-text">Dobu: The Untold Story, es un videojuego que combina las categorías RPG y Roguelike, ambientado en el Japón Medieval. </p>
 						</div>
 					</div>
-					<div class="card grid_5 end_1">
+					<div class="card grid_5 end_1 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -92,7 +121,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_5 end_1">
+					<div class="card grid_5 end_1 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -101,7 +130,7 @@
 						</div>
 					</div>
 					<h2 class="grid_4 section-heading grey"> Trabajos Anteriores </h2>
-					<div class="card grid_6 end_7">
+					<div class="card grid_6 end_7 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -109,7 +138,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6">
+					<div class="card grid_6 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -117,7 +146,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6 end_7">
+					<div class="card grid_6 end_7 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -125,7 +154,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6">
+					<div class="card grid_6 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -133,7 +162,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6 end_7">
+					<div class="card grid_6 end_7 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -141,7 +170,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6">
+					<div class="card grid_6 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -149,7 +178,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6 end_7">
+					<div class="card grid_6 end_7 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -157,7 +186,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6">
+					<div class="card grid_6 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -165,7 +194,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6 end_7">
+					<div class="card grid_6 end_7 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -173,7 +202,7 @@
 							<a href=""><h4 class="card-title">Dobu: The Untold Story</h4></a>
 						</div>
 					</div>
-					<div class="card grid_6">
+					<div class="card grid_6 works">
 						<figure class="card-image overflow-hidden">
 							<img src="assets/img/dobu_logo.jpg" alt="Dobu: The Untold Story">
 						</figure>
@@ -206,9 +235,12 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/lib/loading-bar.js"></script>
+	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/lib/tooltipster.bundle.min.js"></script>
 	<script type="text/javascript" src="js/lib/tooltipster-discovery.min.js"></script>
-	<script type="text/javascript" src="js/lib/typed.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/gameSystem.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
