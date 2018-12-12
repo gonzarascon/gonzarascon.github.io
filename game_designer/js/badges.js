@@ -33,38 +33,3 @@ var shared = new ldBar('#shared',{
 	"fill-background": "rgba(0,0,0,0)",
 	"max": "100"
 });
-
-// $('#fiveSeen').on('click', function(event) {
-// 	event.preventDefault();
-// 	for (var i = 0; i < 101; i++) {
-// 		fiveSeen.set(i);
-// 	}
-// });
-
-// $('#allSeen').on('click', function(event) {
-// 	event.preventDefault();
-// 	for (var i = 0; i < 101; i++) {
-// 		allSeen.set(i);
-// 	}
-// });
-
-// $('#profileSeen').on('click', function(event) {
-// 	event.preventDefault();
-// 	for (var i = 0; i < 101; i++) {
-// 		profileSeen.set(i);
-// 	}
-// });
-
-// $('#chatted').on('click', function(event) {
-// 	event.preventDefault();
-// 	for (var i = 0; i < 101; i++) {
-// 		chatted.set(i);
-// 	}
-// });
-
-// $('#shared').on('click', function(event) {
-// 	event.preventDefault();
-// 	for (var i = 0; i < 101; i++) {
-// 		shared.set(i);
-// 	}
-// });

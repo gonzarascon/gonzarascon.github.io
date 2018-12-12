@@ -1,36 +1,54 @@
 let viewedWorks = 0;
+let viewedAll = false;
+let viewedProfile = false;
+let viewedContact = false;
+let viewedSm = false;
+
 let game = {
 
 	checkedWorks: function(){
 		viewedWorks++;
-		if(viewedWorks <= 5){
-			fiveSeen.set(viewedWorks*20);
-		}
 
-		if(viewedWorks == 5){game.badgeNotification();}
+		if(viewedWorks == 5 || viewedWorks == 1){game.badgeNotification();}
 
-		allSeen.set(viewedWorks*10);
 		game.checkContact();
 	},
 	checkProfile : function(){
-		profileSeen.set(100);
 		game.badgeNotification(); //Always call to badgeNotification() when a badge is aqquired
 	},
 	checkContact: function(){
-		if(viewedWorks > 5 && $('#email').not(':visible')){
+		if(viewedWorks > 2 && $('#email').not(':visible')){
+
 			$('#emailLocker').fadeOut('300', function() {
+				$('.contact-lock').fadeOut('300');
+				$('#skip-medal').fadeOut('300');
 				$('#email').fadeIn('300');
 			});
 		}
 		if ($('#email').is(':visible')) {
-			chatted.set(100);
 			game.badgeNotification();
 		}
 		return;
 	},
 	checkShare: function(){
-		shared.set(100);
 		game.badgeNotification();
+	},
+	updateBadges: function(){
+		if(viewedWorks <= 5){
+			fiveSeen.set(viewedWorks*20);
+		}
+		if(viewedAll == true){
+			allSeen.set(100);
+		}
+		if(viewedProfile == true){
+			profileSeen.set(100);
+		}
+		if(viewedContact == true){
+			chatted.set(100);
+		}
+		if(viewedSm == true){
+			shared.set(100);
+		}
 	},
 	badgeNotification: function(){
 		//Notificación de medalla
