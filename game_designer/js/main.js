@@ -16,11 +16,26 @@ $(document).ready(function() {
 	});
 
 	// =================== JSON DATA SETTINGS
-	$.getJSON('json/projects.json', function(json) {
+	let projectName = [];
+	let projectKeywords = [];
+	let projectDescription = [];
+	let projectImages = [];
+	$.getJSON('json/projects.json', function(project) {
 			/*optional stuff to do after success */
-			console.log(json);
-	});
 
+			$.each(project, function(i, el) {
+				console.log(project[i].projectName);
+				projectName.push(project[i].projectName);
+				projectKeywords.push(project[i].keywords);
+				projectDescription.push(project[i].projectDescription);
+				projectImages.push([project[i].image1,project[i].image2,project[i].image3]);
+			});
+
+	});
+	console.log(projectName);
+	console.log(projectKeywords);
+	console.log(projectDescription);
+	console.log(projectImages);
 	// =================== MEDAL CASE SETTINGS
 	let medalButton = $('#medal');
 	let medalModal = $('#medal-container');
