@@ -1,9 +1,0 @@
-{
-  "name": "botonera_new",
-  "version": "1.0.0",
-  "description": "Meme Sounds from Argentina",
-  "main": "index.js",
-  "repository": "github.com/gonzarascon/gonzarascon.github.io",
-  "author": "Gonzalo Rascon",
-  "license": "MIT"
-}
